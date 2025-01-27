@@ -48,6 +48,9 @@ def get_desktop_environment():
     if desktop_session == "GNOME":
         gnome = cache["gnome-shell"]
         desktop_version = gnome.installed.version.split("-")[0]
+    elif desktop_session == "XFCE":
+        xfce = cache["xfce4"]
+        desktop_version = xfce.installed.version.split("-")[0]
 
     return desktop_session, desktop_version
 
@@ -61,12 +64,12 @@ def get_cpu():
     with open(cpuinfo_path, "r") as f:
         file_content = f.readlines()
         model = None
-        thread_no = None
+        thread_no = 0
         for line in file_content:
             if "model name" in line:
                 model = line_split(line)
             if "siblings" in line:
-                thread_no = line_split(line)
+                thread_no += 1
 
         return model, thread_no
 
@@ -292,60 +295,8 @@ def get_window_manager():
     desktop_env = os.environ.get("XDG_CURRENT_DESKTOP")
     if desktop_env == "GNOME":
         return "Mutter"
-    elif desktop_env == "KDE":
-        return "KWin"
     elif desktop_env == "XFCE":
         return "Xfwm4"
-    elif desktop_env == "LXDE":
-        return "Openbox"
-    elif desktop_env == "MATE":
-        return "Marco"
-    elif desktop_env == "Cinnamon":
-        return "Muffin"
-    elif desktop_env == "Pantheon":
-        return "Gala"
-    elif desktop_env == "Budgie:GNOME":
-        return "Mutter"
-    elif desktop_env == "Budgie:Pantheon":
-        return "Gala"
-    elif desktop_env == "Budgie:XFCE":
-        return "Xfwm4"
-    elif desktop_env == "Budgie:KDE":
-        return "KWin"
-    elif desktop_env == "Budgie:LXDE":
-        return "Openbox"
-    elif desktop_env == "Budgie:MATE":
-        return "Marco"
-    elif desktop_env == "Budgie:Cinnamon":
-        return "Muffin"
-    elif desktop_env == "Budgie:Deepin":
-        return "KWin"
-    elif desktop_env == "Deepin":
-        return "KWin"
-    elif desktop_env == "Enlightenment":
-        return "Enlightenment"
-    elif desktop_env == "i3":
-        return "i3"
-    elif desktop_env == "Liri":
-        return "KWin"
-    elif desktop_env == "Liri:GNOME":
-        return "Mutter"
-    elif desktop_env == "Liri:Pantheon":
-        return "Gala"
-    elif desktop_env == "Liri:XFCE":
-        return "Xfwm4"
-    elif desktop_env == "Liri:LXDE":
-        return "Openbox"
-    elif desktop_env == "Liri:MATE":
-        return "Marco"
-    elif desktop_env == "Liri:Cinnamon":
-        return "Muffin"
-    elif desktop_env == "Liri:Deepin":
-        return "KWin"
-    elif desktop_env == "Liri:Enlightenment":
-        return "Enlightenment"
-    elif desktop_env == "Liri:i3":
-        return "i3"
     return "Unknown"
 
 
@@ -357,8 +308,6 @@ def get_wm_theme():
     settings = Gio.Settings.new("org.gnome.desktop.interface")
     if desktop_env == "GNOME":
         return settings.get_value("gtk-theme").unpack()
-    elif desktop_env == "KDE":
-        return "Breeze"
     elif desktop_env == "XFCE":
         return "Xfce"
     return "Unknown"
