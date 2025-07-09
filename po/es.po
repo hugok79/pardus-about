@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pardus-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-09 16:13+0300\n"
+"POT-Creation-Date: 2025-07-09 16:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Veronica Conesa <vero.gconesa@gmail.com>\n"
 "Language-Team: Spanish <vero.gconesa@gmail.com>\n"
@@ -30,76 +30,80 @@ msgstr "Sobre la Aplicación"
 msgid "<b>Hardware:</b>"
 msgstr "<b>Kernel:</b>"
 
-#: ui/MainWindow.glade:355
+#: ui/MainWindow.glade:341
+msgid "Hardware has a Windows OEM key"
+msgstr ""
+
+#: ui/MainWindow.glade:368
 msgid "<b>Kernel:</b>"
 msgstr "<b>Kernel:</b>"
 
-#: ui/MainWindow.glade:401
+#: ui/MainWindow.glade:414
 msgid "<b>Desktop:</b>"
 msgstr "<b>Escritorio:</b>"
 
-#: ui/MainWindow.glade:446
+#: ui/MainWindow.glade:459
 msgid "<b>CPU:</b>"
 msgstr "<b>CPU:</b>"
 
-#: ui/MainWindow.glade:491
+#: ui/MainWindow.glade:504
 msgid "<b>GPU:</b>"
 msgstr "<b>GPU:</b>"
 
-#: ui/MainWindow.glade:521
+#: ui/MainWindow.glade:534
 msgid "GPU running as llvmpipe"
 msgstr "GPU ejecutado como llvmpipe"
 
-#: ui/MainWindow.glade:564
+#: ui/MainWindow.glade:577
 msgid "<b>RAM:</b>"
 msgstr "<b>RAM:</b>"
 
-#: ui/MainWindow.glade:609
+#: ui/MainWindow.glade:622
 msgid "<b>Public IP:</b>"
 msgstr "<b>IP Pública:</b>"
 
-#: ui/MainWindow.glade:672
+#: ui/MainWindow.glade:685
 msgid "<b>Local IP:</b>"
 msgstr "<b>IP Local:</b>"
 
-#: ui/MainWindow.glade:776
+#: ui/MainWindow.glade:789
 msgid "About This Computer"
 msgstr "Acerca de este ordenador"
 
-#: ui/MainWindow.glade:814
+#: ui/MainWindow.glade:827
 msgid "About Pardus About Application"
 msgstr "Acerca de la Aplicación Sobre Pardus"
 
-#: ui/MainWindow.glade:822
+#: ui/MainWindow.glade:835
 msgid "Get info about your Pardus system."
 msgstr "Obtén información sobre tu sistema Pardus."
 
-#: ui/MainWindow.glade:824
+#: ui/MainWindow.glade:837
 msgid "Website"
 msgstr "Sitio Web"
 
 #. Name Surname <example@examplemail.com>
-#: ui/MainWindow.glade:828
+#: ui/MainWindow.glade:841
 msgid "translator-credits"
 msgstr ""
 
-#: ui/MainWindow.glade:862 ui/MainWindow.glade:884
+#: ui/MainWindow.glade:875 ui/MainWindow.glade:897
 msgid "Gathering system logs..."
 msgstr "Recopilando registros del sistema..."
 
-#: ui/MainWindow.glade:918
+#: ui/MainWindow.glade:931
 msgid "Your system report has been exported to the desktop."
 msgstr "Tu informe del sistema ha sido exportado al escritorio."
 
-#: ui/MainWindow.glade:919
+#: ui/MainWindow.glade:932
 msgid "~/Desktop/pardus_system_report.tar.gz"
 msgstr "~/Escritorio/pardus_system_report.tar.gz"
 
-#: src/MainWindow.py:100
+#: src/MainWindow.py:102
 msgid "Pardus About"
 msgstr "Acerca de Pardus"
 
-#: src/MainWindow.py:104
+#: src/MainWindow.py:106
 #, fuzzy
 msgid "About Pardus About"
 msgstr "Acerca de Pardus"

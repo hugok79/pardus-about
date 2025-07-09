@@ -138,3 +138,8 @@ test/
 debian/.debhelper
 debian/debhelper-build-stamp
 debian/pardus-about*
+
+*.mo
+src/__version__
+.pybuild/
+debian/files

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-09 16:13+0300\n"
+"POT-Creation-Date: 2025-07-09 16:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,75 +29,79 @@ msgstr ""
 msgid "<b>Hardware:</b>"
 msgstr ""
 
-#: ui/MainWindow.glade:355
+#: ui/MainWindow.glade:341
+msgid "Hardware has a Windows OEM key"
+msgstr ""
+
+#: ui/MainWindow.glade:368
 msgid "<b>Kernel:</b>"
 msgstr ""
 
-#: ui/MainWindow.glade:401
+#: ui/MainWindow.glade:414
 msgid "<b>Desktop:</b>"
 msgstr ""
 
-#: ui/MainWindow.glade:446
+#: ui/MainWindow.glade:459
 msgid "<b>CPU:</b>"
 msgstr ""
 
-#: ui/MainWindow.glade:491
+#: ui/MainWindow.glade:504
 msgid "<b>GPU:</b>"
 msgstr ""
 
-#: ui/MainWindow.glade:521
+#: ui/MainWindow.glade:534
 msgid "GPU running as llvmpipe"
 msgstr ""
 
-#: ui/MainWindow.glade:564
+#: ui/MainWindow.glade:577
 msgid "<b>RAM:</b>"
 msgstr ""
 
-#: ui/MainWindow.glade:609
+#: ui/MainWindow.glade:622
 msgid "<b>Public IP:</b>"
 msgstr ""
 
-#: ui/MainWindow.glade:672
+#: ui/MainWindow.glade:685
 msgid "<b>Local IP:</b>"
 msgstr ""
 
-#: ui/MainWindow.glade:776
+#: ui/MainWindow.glade:789
 msgid "About This Computer"
 msgstr ""
 
-#: ui/MainWindow.glade:814
+#: ui/MainWindow.glade:827
 msgid "About Pardus About Application"
 msgstr ""
 
-#: ui/MainWindow.glade:822
+#: ui/MainWindow.glade:835
 msgid "Get info about your Pardus system."
 msgstr ""
 
-#: ui/MainWindow.glade:824
+#: ui/MainWindow.glade:837
 msgid "Website"
 msgstr ""
 
 #. Name Surname <example@examplemail.com>
-#: ui/MainWindow.glade:828
+#: ui/MainWindow.glade:841
 msgid "translator-credits"
 msgstr ""
 
-#: ui/MainWindow.glade:862 ui/MainWindow.glade:884
+#: ui/MainWindow.glade:875 ui/MainWindow.glade:897
 msgid "Gathering system logs..."
 msgstr ""
 
-#: ui/MainWindow.glade:918
+#: ui/MainWindow.glade:931
 msgid "Your system report has been exported to the desktop."
 msgstr ""
 
-#: ui/MainWindow.glade:919
+#: ui/MainWindow.glade:932
 msgid "~/Desktop/pardus_system_report.tar.gz"
 msgstr ""
 
-#: src/MainWindow.py:100
+#: src/MainWindow.py:102
 msgid "Pardus About"
 msgstr ""
 
-#: src/MainWindow.py:104
+#: src/MainWindow.py:106
 msgid "About Pardus About"
 msgstr ""
