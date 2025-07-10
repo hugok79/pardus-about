@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-09 16:28+0300\n"
+"POT-Creation-Date: 2025-07-10 15:33+0000\n"
 "PO-Revision-Date: 2024-03-18 14:51+0300\n"
 "Last-Translator: Fatih Altun <fatih.altun@pardus.org.tr>\n"
 "Language-Team: Turkish <dev@pardus.org.tr>\n"
@@ -34,82 +34,226 @@ msgstr "Uygulama Hakkında"
 msgid "<b>Hardware:</b>"
 msgstr "<b>Donanım:</b>"
 
-#: ui/MainWindow.glade:341
+#: ui/MainWindow.glade:353
 msgid "Hardware has a Windows OEM key"
 msgstr "Donanımın bir Windows OEM anahtarı var"
 
-#: ui/MainWindow.glade:368
+#: ui/MainWindow.glade:380
 msgid "<b>Kernel:</b>"
 msgstr "<b>Çekirdek:</b>"
 
-#: ui/MainWindow.glade:414
+#: ui/MainWindow.glade:426
 msgid "<b>Desktop:</b>"
 msgstr "<b>Masaüstü:</b>"
 
-#: ui/MainWindow.glade:459
+#: ui/MainWindow.glade:471
 msgid "<b>CPU:</b>"
 msgstr "<b>İşlemci:</b>"
 
-#: ui/MainWindow.glade:504
+#: ui/MainWindow.glade:516
 msgid "<b>GPU:</b>"
 msgstr "<b>Ekran Kartı:</b>"
 
-#: ui/MainWindow.glade:534
+#: ui/MainWindow.glade:546
 msgid "GPU running as llvmpipe"
 msgstr "Ekran kartı, llvmpipe olarak çalışıyor"
 
-#: ui/MainWindow.glade:577
+#: ui/MainWindow.glade:589
 msgid "<b>RAM:</b>"
 msgstr "<b>Bellek:</b>"
 
-#: ui/MainWindow.glade:622
+#: ui/MainWindow.glade:634
 msgid "<b>Public IP:</b>"
 msgstr "<b>Dış IP:</b>"
 
-#: ui/MainWindow.glade:685
+#: ui/MainWindow.glade:697
 msgid "<b>Local IP:</b>"
 msgstr "<b>İç IP:</b>"
 
-#: ui/MainWindow.glade:789
+#: ui/MainWindow.glade:801
 msgid "About This Computer"
 msgstr "Bu Bilgisayar Hakkında"
 
-#: ui/MainWindow.glade:827
+#: ui/MainWindow.glade:839
 msgid "About Pardus About Application"
 msgstr "Pardus Hakkında Uygulaması Hakkında"
 
-#: ui/MainWindow.glade:835
+#: ui/MainWindow.glade:847
 msgid "Get info about your Pardus system."
 msgstr "Pardus sisteminiz hakkında bilgi alın."
 
-#: ui/MainWindow.glade:837
+#: ui/MainWindow.glade:849
 msgid "Website"
 msgstr "Web Sitesi"
 
 #. Name Surname <example@examplemail.com>
-#: ui/MainWindow.glade:841
+#: ui/MainWindow.glade:853
 msgid "translator-credits"
 msgstr "Fatih Altun <fatih.altun@pardus.org.tr>"
 
-#: ui/MainWindow.glade:875 ui/MainWindow.glade:897
+#: ui/MainWindow.glade:887 ui/MainWindow.glade:909
 msgid "Gathering system logs..."
 msgstr "Sistem logları toplanıyor..."
 
-#: ui/MainWindow.glade:931
+#: ui/MainWindow.glade:943
 msgid "Your system report has been exported to the desktop."
 msgstr "Sistem raporunuz masaüstüne aktarılmıştır."
 
-#: ui/MainWindow.glade:932
+#: ui/MainWindow.glade:944
 msgid "~/Desktop/pardus_system_report.tar.gz"
 msgstr "~/Masaüstü/pardus_sistem_raporu.tar.gz"
 
-#: src/MainWindow.py:102
+#: src/MainWindow.py:107
 msgid "Pardus About"
 msgstr "Pardus Hakkında"
 
-#: src/MainWindow.py:106
+#: src/MainWindow.py:111
 msgid "About Pardus About"
 msgstr "Pardus Hakkında Hakkında"
+
+#: src/utils.py:328
+msgid "Other"
+msgstr "Diğer"
+
+#: src/utils.py:329
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#: src/utils.py:330
+msgid "Desktop"
+msgstr "Masaüstü"
+
+#: src/utils.py:331
+msgid "Low Profile Desktop"
+msgstr "Düşük Profil Masaüstü"
+
+#: src/utils.py:332
+msgid "Pizza Box"
+msgstr "Pizza Kutusu"
+
+#: src/utils.py:333
+msgid "Mini Tower"
+msgstr "Mini Kule"
+
+#: src/utils.py:334
+msgid "Tower"
+msgstr "Kule"
+
+#: src/utils.py:335
+msgid "Portable"
+msgstr "Taşınabilir"
+
+#: src/utils.py:336
+msgid "Laptop"
+msgstr "Laptop"
+
+#: src/utils.py:337
+msgid "Notebook"
+msgstr "Dizüstü"
+
+#: src/utils.py:338
+msgid "Hand Held"
+msgstr "El Tipi"
+
+#: src/utils.py:339
+msgid "Docking Station"
+msgstr "Bağlama Noktası"
+
+#: src/utils.py:340
+msgid "All in One"
+msgstr "Hepsi Bir Arada"
+
+#: src/utils.py:341
+msgid "Sub Notebook"
+msgstr "Alt Dizüstü"
+
+#: src/utils.py:342
+msgid "Space-Saving"
+msgstr "Yerden-Tasarruf"
+
+#: src/utils.py:343
+msgid "Lunch Box"
+msgstr "Beslenme Çantası"
+
+#: src/utils.py:344
+msgid "Main System Chassis"
+msgstr "Ana Sistem Şasisi"
+
+#: src/utils.py:345
+msgid "Expansion Chassis"
+msgstr "Genişletme Şasisi"
+
+#: src/utils.py:346
+msgid "SubChassis"
+msgstr "Alt Şasi"
+
+#: src/utils.py:347
+msgid "Bus Expansion Chassis"
+msgstr "Yol Genişlete Şasisi"
+
+#: src/utils.py:348
+msgid "Peripheral Chassis"
+msgstr "Çevresel Şasi"
+
+#: src/utils.py:349
+msgid "RAID Chassis"
+msgstr "RAIS Şasisi"
+
+#: src/utils.py:350
+msgid "Rack Mount Chassis"
+msgstr "Raf Montajlı Şasi"
+
+#: src/utils.py:351
+msgid "Sealed-case PC"
+msgstr "Mühürlü Kasa PC"
+
+#: src/utils.py:352
+msgid "Multi-system chassis"
+msgstr "Çoklu Sistem Şasisi"
+
+#: src/utils.py:353
+msgid "Compact PCI"
+msgstr "Kompakt PCI"
+
+#: src/utils.py:354
+msgid "Advanced TCA"
+msgstr "Gelişmiş TCA"
+
+#: src/utils.py:355
+msgid "Blade"
+msgstr "Bıçak"
+
+#: src/utils.py:356
+msgid "Blade Enclosure"
+msgstr "Bıçak Muhafazası"
+
+#: src/utils.py:357
+msgid "Tablet"
+msgstr "Tablet"
+
+#: src/utils.py:358
+msgid "Convertible"
+msgstr "Dönüştürülebilir"
+
+#: src/utils.py:359
+msgid "Detachable"
+msgstr "Çıkarılabilir"
+
+#: src/utils.py:360
+msgid "IoT Gateway"
+msgstr "IoT Geçidi"
+
+#: src/utils.py:361
+msgid "Embedded PC"
+msgstr "Gömülü PC"
+
+#: src/utils.py:362
+msgid "Mini PC"
+msgstr "Mini PC"
+
+#: src/utils.py:363
+msgid "Stick PC"
+msgstr "Çubuk PC"
 
 #~ msgid "Physical RAM"
 #~ msgstr "Fiziksel Bellek"
