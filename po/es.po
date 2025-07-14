@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pardus-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-10 15:33+0000\n"
+"POT-Creation-Date: 2025-07-14 12:52+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Veronica Conesa <vero.gconesa@gmail.com>\n"
 "Language-Team: Spanish <vero.gconesa@gmail.com>\n"
@@ -251,6 +251,10 @@ msgstr ""
 
 #: src/utils.py:363
 msgid "Stick PC"
+msgstr ""
+
+#: src/utils.py:366
+msgid "Virtual Machine"
 msgstr ""
 
 #~ msgid "Physical RAM"

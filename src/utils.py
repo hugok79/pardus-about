@@ -362,6 +362,8 @@ def get_hardware_type_name():
         _("Mini PC"),
         _("Stick PC")
     ]
+    if is_virtual_machine():
+        return _("Virtual Machine")
     type = int(readfile("/sys/devices/virtual/dmi/id/chassis_type"))
     if type < len(chassis_names):
         return chassis_names[type-1]
@@ -374,6 +376,14 @@ def is_laptop():
         return type in ["8", "9", "10", "11", "12", "14", "18", "21","31"]
     return False
 
+def is_virtual_machine():
+    cpuinfo = readfile("/proc/cpuinfo").split("\n")
+    for line in cpuinfo:
+        if line.startswith("flags"):
+            return "hypervisor" in line
+    return False
+
+
 def get_hardware_name():
     if os.path.isfile("/sys/firmware/devicetree/base/model"):
         return readfile("/sys/firmware/devicetree/base/model").strip()
@@ -384,7 +394,9 @@ def get_hardware_name():
     dmi_dir = "/sys/devices/virtual/dmi/id/"
     hw.append(readfile(dmi_dir+"sys_vendor").strip())
     hw.append(readfile(dmi_dir+"product_name").strip())
-    hw.append("({})".format(readfile(dmi_dir+"board_name").strip()))
+    board_name = readfile(dmi_dir+"board_name").strip()
+    if len(board_name) > 0:
+        hw.append("({})".format(board_name))
 
     if len(hw) > 0:
         hardware += " ".join(hw)

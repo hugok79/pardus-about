@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pardus-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-10 15:33+0000\n"
+"POT-Creation-Date: 2025-07-14 12:52+0300\n"
 "PO-Revision-Date: 2024-03-18 15:57+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Português <hugokarvalho@gotmail.com>\n"
@@ -252,6 +252,10 @@ msgstr ""
 
 #: src/utils.py:363
 msgid "Stick PC"
+msgstr ""
+
+#: src/utils.py:366
+msgid "Virtual Machine"
 msgstr ""
 
 #~ msgid "Physical RAM"

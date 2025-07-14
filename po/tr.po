@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-10 15:33+0000\n"
+"POT-Creation-Date: 2025-07-14 12:52+0300\n"
 "PO-Revision-Date: 2024-03-18 14:51+0300\n"
 "Last-Translator: Fatih Altun <fatih.altun@pardus.org.tr>\n"
 "Language-Team: Turkish <dev@pardus.org.tr>\n"
@@ -255,5 +255,7 @@ msgstr "Mini PC"
 msgid "Stick PC"
 msgstr "Çubuk PC"
 
-#~ msgid "Physical RAM"
-#~ msgstr "Fiziksel Bellek"
+#: src/utils.py:366
+msgid "Virtual Machine"
+msgstr "Sanal Makine"
+
