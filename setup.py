@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 
+# This file is template/test 
+# 
+
+import os
+import subprocess
 
 from setuptools import setup, find_packages
-import os, subprocess
 
 
 def create_mo_files():
@@ -11,69 +16,60 @@ def create_mo_files():
     for po in os.listdir(podir):
         if po.endswith(".po"):
             os.makedirs("{}/{}/LC_MESSAGES".format(podir, po.split(".po")[0]), exist_ok=True)
-            mo_file = "{}/{}/LC_MESSAGES/{}".format(podir, po.split(".po")[0], "pardus-about.mo")
+            mo_file = "{}/{}/LC_MESSAGES/{}".format(podir, po.split(".po")[0], "pardus-python-gtk.mo")
             msgfmt_cmd = 'msgfmt {} -o {}'.format(podir + "/" + po, mo_file)
             subprocess.call(msgfmt_cmd, shell=True)
             mo.append(("/usr/share/locale/" + po.split(".po")[0] + "/LC_MESSAGES",
-                       ["po/" + po.split(".po")[0] + "/LC_MESSAGES/pardus-about.mo"]))
+                       ["po/" + po.split(".po")[0] + "/LC_MESSAGES/pardus-python-gtk.mo"]))
     return mo
 
+
 changelog = "debian/changelog"
-version = "0.1.0"
 if os.path.exists(changelog):
     head = open(changelog).readline()
     try:
         version = head.split("(")[1].split(")")[0]
     except:
         print("debian/changelog format is wrong for get version")
-        version = ""
+        version = "0.0.0"
     f = open("src/__version__", "w")
     f.write(version)
     f.close()
 
 data_files = [
-    ("/usr/share/applications/",
-     ["tr.org.pardus.about.desktop"]),
-    ("/usr/share/pardus/pardus-about/",
-     ["pardus-about.svg",
-      "bluebackground-21.png",
-      "bluebackground-23.png",
-      "bayrak.gif"]),
-    ("/usr/share/pardus/pardus-about/src",
-     ["src/cli.py",
-      "src/copy_to_desktop.sh",
-      "src/dump_logs.sh",
-      "src/dump_system_info.sh",
-      "src/get_system_info.sh",
-      "src/Main.py",
-      "src/MainWindow.py",
-      "src/utils.py",
-      "src/__version__"]),
-    ("/usr/share/pardus/pardus-about/ui",
+    ("/usr/bin", ["pardus-python-gtk"]),
+    ("/usr/share/applications",
+     ["data/tr.org.pardus.python-gtk.desktop"]),
+    ("/usr/share/pardus/pardus-python-gtk/ui",
      ["ui/MainWindow.glade"]),
-    ("/usr/share/pardus/pardus-about/data",
-     ["data/pci.ids",
-      "data/servers.txt"]),
-    ("/usr/share/polkit-1/actions",
-     ["tr.org.pardus.pkexec.pardus-about.policy"]),
-    ("/usr/bin/",
-     ["pardus-about"]),
+    ("/usr/share/pardus/pardus-python-gtk/src",
+     ["src/Main.py",
+      "src/MainWindow.py",
+      "src/UserSettings.py",
+      "src/__version__"]),
+    ("/usr/share/pardus/pardus-python-gtk/data",
+     ["data/style.css",
+      "data/tr.org.pardus.python-gtk-autostart.desktop",
+      "data/pardus-python-gtk.svg",
+      "data/pardus-python-gtk-on-symbolic.svg",
+      "data/pardus-python-gtk-off-symbolic.svg"]),
     ("/usr/share/icons/hicolor/scalable/apps/",
-     ["pardus-about.svg",
-      "pardus-about-symbolic.svg"])
+     ["data/pardus-python-gtk.svg",
+      "data/pardus-python-gtk-on-symbolic.svg",
+      "data/pardus-python-gtk-off-symbolic.svg"])
 ] + create_mo_files()
 
 setup(
-    name="pardus-about",
+    name="pardus-python-gtk",
     version=version,
     packages=find_packages(),
-    scripts=["pardus-about"],
+    scripts=["pardus-python-gtk"],
     install_requires=["PyGObject"],
     data_files=data_files,
-    author="Fatih Altun",
-    author_email="fatih.altun@pardus.org.tr",
-    description="Get info about your Pardus system.",
+    author="Yusuf Düzgün",
+    author_email="yusuf.duzgun@pardus.org.tr",
+    description="Pardus Python GTK EXAMPLE",
     license="GPLv3",
-    keywords="about",
-    url="https://www.pardus.org.tr",
+    keywords="pardus-python-gtk, example, test",
+    url="https://github.com/pardus/pardus-python-gtk",
 )
