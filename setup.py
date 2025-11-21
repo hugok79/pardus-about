@@ -72,6 +72,7 @@ data_files = [
         "/usr/share/icons/hicolor/scalable/apps/",
         [
             "data/pardus-about.svg",
+            "data/pardus-hardware-info.svg",
             "data/pardus-about-on-symbolic.svg",
             "data/pardus-about-off-symbolic.svg",
         ],
