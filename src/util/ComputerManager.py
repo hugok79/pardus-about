@@ -116,6 +116,13 @@ class ComputerManager:
         # Is Live USB?
         self.computer_info["live_boot"] = self.is_live_boot()
 
+        # Oem Available
+        self.computer_info["oem"] = os.path.isfile("/sys/firmware/acpi/tables/MSDM")
+
+        # Deep sleep mode support
+        with open("/sys/power/mem_sleep", "r") as f:
+            self.computer_info["mem_sleep_support"] = "deep" in f.read()
+
         # ACPI:
         p = subprocess.run(
             ["pkexec", "/usr/share/pardus/pardus-about/src/Actions.py", "acpi"]
