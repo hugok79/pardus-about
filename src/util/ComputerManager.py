@@ -129,6 +129,15 @@ class ComputerManager:
         )
         self.computer_info["is_acpi_supported"] = p.returncode == 0
 
+        # Boot mode (Uefi or legacy)
+        self.computer_info["boot"] = "Legacy"
+        if os.path.isdir("/sys/firmware/efi/"):
+            self.computer_info["boot"] = "UEFI"
+            with open("/sys/firmware/efi/fw_platform_size", "r") as f:
+                if "32" == f.readline().strip():
+                    self.computer_info["boot"] = "UEFI32"
+
+
     def prepare_cpu_info(self):
         with open("/proc/cpuinfo", "r") as f:
             core_count = 0
