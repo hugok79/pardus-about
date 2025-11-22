@@ -151,10 +151,10 @@ def get_hid_input_type(input_path):
             else:
                 current_value += c
 
-        print("---hid---")
-        print("modalias:", modalias_path)
-        print("events:", events)
-        print("keys:", keys)
+        # print("---hid---")
+        # print("modalias:", modalias_path)
+        # print("events:", events)
+        # print("keys:", keys)
 
         BTN_TOUCH = "14A" in keys  # touch support
         BTN_RIGHT = "111" in keys  # mouse right click
@@ -244,7 +244,7 @@ def get_hid_devices():
                 if input_type != "":
                     info_input["type"] = input_type
                     info_input["input_device"] = input_device
-                    print(info_input["name"], input_device)
+                    # print(info_input["name"], input_device)
 
                     hid_devices.append(info_input)
 
