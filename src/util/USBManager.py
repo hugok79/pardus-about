@@ -244,7 +244,7 @@ def get_hid_devices():
                 if input_type != "":
                     info_input["type"] = input_type
                     info_input["input_device"] = input_device
-                    # print(info_input["name"], input_device)
+                    print(info_input["name"], input_device)
 
                     hid_devices.append(info_input)
 
