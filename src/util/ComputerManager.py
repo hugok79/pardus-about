@@ -130,7 +130,7 @@ class ComputerManager:
         self.computer_info["is_acpi_supported"] = p.returncode == 0
 
         # Boot mode (Uefi or legacy)
-        self.computer_info["boot"] = "Legacy"
+        self.computer_info["boot"] = "legacy"
         if os.path.isdir("/sys/firmware/efi/"):
             self.computer_info["boot"] = "UEFI"
             with open("/sys/firmware/efi/fw_platform_size", "r") as f:
