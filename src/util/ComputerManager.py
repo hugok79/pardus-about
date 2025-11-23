@@ -125,7 +125,7 @@ class ComputerManager:
 
         # ACPI:
         p = subprocess.run(
-            ["pkexec", "/usr/share/pardus/pardus-about/src/Actions.py", "acpi"]
+            ["pkexec", os.path.dirname(os.path.abspath(__file__))+"/../Actions.py", "acpi"]
         )
         self.computer_info["is_acpi_supported"] = p.returncode == 0
 
