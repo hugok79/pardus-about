@@ -2589,16 +2589,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_storage_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -2723,16 +2721,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_graphics_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -2857,16 +2853,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_display_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -2991,16 +2985,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_ethernet_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -3125,16 +3117,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_wifi_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -3259,16 +3249,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_bluetooth_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -3393,16 +3381,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_audio_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -3527,16 +3513,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_camera_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -3661,16 +3645,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_keyboard_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -3795,16 +3777,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_mouse_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -3929,16 +3909,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_fingerprint_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
@@ -4008,7 +3986,7 @@
                                                   <object class="GtkLabel">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
-                                                    <property name="label" translatable="yes">Printers</property>
+                                                    <property name="label" translatable="yes">Printer</property>
                                                     <attributes>
                                                       <attribute name="weight" value="bold"/>
                                                     </attributes>
@@ -4063,16 +4041,14 @@
                                                   </packing>
                                                 </child>
                                                 <child>
-                                                  <object class="GtkBox">
+                                                  <object class="GtkBox" id="ui_hardware_list_printer_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
