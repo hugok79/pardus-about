@@ -215,6 +215,9 @@ class MainWindow:
 
         self.memory_container = UI("ui_hardware_list_memory_container")
 
+        self.ui_hardware_list_memory_container = UI("ui_hardware_list_memory_container")
+
+
         # Submit
         self.ui_submit_window = UI("ui_submit_window")
         # prevent destroying the window on close clicked
@@ -285,6 +288,88 @@ class MainWindow:
         # memory_summary = "32.0 GB Unknown Unknown"
         # TODO FIXME
         self.ui_memory_label.set_text(memory_summary.replace("Unknown", ""))
+
+        # hardware details -memory screen START
+
+        def populate_memory_list(self, memory_slots):
+            """Populate ui_hardware_list_memory_container with memory slot information."""
+            # Clear previous children
+            for child in self.ui_hardware_list_memory_container.get_children():
+                self.ui_hardware_list_memory_container.remove(child)
+
+            # Helper to create a left-aligned label
+            def make_label(text, bold=False):
+                label = Gtk.Label()
+                if bold:
+                    label.set_markup(f"<b>{Gtk.utils.escape(text)}</b>") if hasattr(Gtk, "utils") else label.set_markup(
+                        f"<b>{text}</b>")
+                else:
+                    label.set_text(text)
+                label.set_xalign(0.0)
+                return label
+
+            # Header row
+            header_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+            header_box.pack_start(make_label(_("Slot"), bold=True), True, True, 0)
+            header_box.pack_start(make_label(_("Vendor"), bold=True), True, True, 0)
+            header_box.pack_start(make_label(_("Size"), bold=True), True, True, 0)
+            header_box.pack_start(make_label(_("Type"), bold=True), True, True, 0)
+            header_box.pack_start(make_label(_("Speed"), bold=True), True, True, 0)
+
+            self.ui_hardware_list_memory_container.pack_start(header_box, False, False, 0)
+
+            # If no slots at all
+            if not memory_slots:
+                empty_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+                empty_box.pack_start(make_label(_("No memory information")), True, True, 0)
+                self.ui_hardware_list_memory_container.pack_start(empty_box, False, False, 0)
+                self.ui_hardware_list_memory_container.show_all()
+                return
+
+            # Slot rows
+            for index, slot in enumerate(memory_slots, start=1):
+                size = slot.get("size", 0.0)
+                mem_type = slot.get("type", "Unknown")
+                vendor = slot.get("vendor", _("Unknown")) or _("Unknown")
+                speed = slot.get("speed", "") or ""
+
+                # Decide if this is an "empty" slot
+                is_empty = (not size) or size == 0.0 or mem_type == "Unknown"
+
+                row_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+
+                # Slot number
+                row_box.pack_start(make_label(str(index)), True, True, 0)
+
+                if is_empty:
+                    # Show "boş" for empty slots
+                    row_box.pack_start(make_label(_("empty")), True, True, 0)
+                    row_box.pack_start(make_label(""), True, True, 0)
+                    row_box.pack_start(make_label(""), True, True, 0)
+                    row_box.pack_start(make_label(""), True, True, 0)
+                else:
+                    # Pretty size (e.g. 16.0 -> "16 GB")
+                    if isinstance(size, (int, float)):
+                        if float(size).is_integer():
+                            size_text = f"{int(size)} GB"
+                        else:
+                            size_text = f"{size} GB"
+                    else:
+                        size_text = str(size)
+
+                    row_box.pack_start(make_label(vendor), True, True, 0)
+                    row_box.pack_start(make_label(size_text), True, True, 0)
+                    row_box.pack_start(make_label(mem_type), True, True, 0)
+                    row_box.pack_start(make_label(speed), True, True, 0)
+
+                self.ui_hardware_list_memory_container.pack_start(row_box, False, False, 0)
+
+            self.ui_hardware_list_memory_container.show_all()
+
+        # hardware details -memory screen END
+
+        memory_info = self.computerManager.get_memory_info()
+        populate_memory_list(self, memory_info)
 
         memory_info = self.computerManager.get_memory_info()
         # for _index, memory in enumerate(memory_info):

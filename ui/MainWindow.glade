@@ -2459,14 +2459,12 @@
                                                   <object class="GtkBox" id="ui_hardware_list_memory_container">
                                                     <property name="visible">True</property>
                                                     <property name="can-focus">False</property>
+                                                    <property name="margin-start">13</property>
+                                                    <property name="margin-end">13</property>
+                                                    <property name="margin-top">13</property>
+                                                    <property name="margin-bottom">13</property>
                                                     <property name="orientation">vertical</property>
                                                     <property name="spacing">12</property>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
-                                                    <child>
-                                                      <placeholder/>
-                                                    </child>
                                                     <child>
                                                       <placeholder/>
                                                     </child>
