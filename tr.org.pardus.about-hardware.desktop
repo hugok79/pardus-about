@@ -1,11 +1,11 @@
 [Desktop Entry]
 Name=Pardus Hardware Information
-Name[tr]=Pardus Donanım Detayları
+Name[tr]=Pardus Donanım Bilgisi
 GenericName=Hardware Information Viewer
-GenericName[tr]=Donanım Detayları Görüntüleyici
-Comment=Get info about your Pardus system.
+GenericName[tr]=Donanım Bilgisi Görüntüleyici
+Comment=Get informations about the hardware in your Pardus system.
 Comment[tr]=Pardus sisteminizdeki donanımlar hakkında bilgi edinin.
-Exec=pardus-about --hardware true
+Exec=pardus-about --hardware
 Icon=pardus-hardware-info
 Terminal=false
 Type=Application

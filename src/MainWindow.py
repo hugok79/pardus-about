@@ -65,6 +65,8 @@ class MainWindow:
         task = Gio.Task.new(callback=self.on_read_hardware_info_finish)
         task.run_in_thread(self.read_hardware_info)
 
+        self.control_args()
+
         # Show Screen:
         self.window.show_all()
 
@@ -217,7 +219,6 @@ class MainWindow:
 
         self.ui_hardware_list_memory_container = UI("ui_hardware_list_memory_container")
 
-
         # Submit
         self.ui_submit_window = UI("ui_submit_window")
         # prevent destroying the window on close clicked
@@ -231,7 +232,7 @@ class MainWindow:
         if "hardware" in self.application.args.keys():
             self.is_hardware_details_visible = True
 
-        self.ui_main_window.present()
+        self.window.present()
 
     def read_pardus_info(self):
         pardus_info = OSManager.get_os_info()
@@ -240,7 +241,7 @@ class MainWindow:
         codename_map = {
             "yirmibir": "Dolunay",
             "yirmiuc": "Ay Yıldız",
-            "yirmibes": "Bilge"
+            "yirmibes": "Bilge",
         }
         raw_name = pardus_info.get("os_codename", "")
         display_name = codename_map.get(raw_name, raw_name)
@@ -269,7 +270,7 @@ class MainWindow:
         desktop_info = "{} {} ({})".format(
             pardus_info["desktop"],
             pardus_info["desktop_version"],
-            pardus_info["display"]
+            pardus_info["display"],
         )
         self.ui_detail_os_desktop_label.set_text(desktop_info)
         self.ui_desktop_label.set_text(desktop_info)
@@ -301,8 +302,9 @@ class MainWindow:
             def make_label(text, bold=False):
                 label = Gtk.Label()
                 if bold:
-                    label.set_markup(f"<b>{Gtk.utils.escape(text)}</b>") if hasattr(Gtk, "utils") else label.set_markup(
-                        f"<b>{text}</b>")
+                    label.set_markup(f"<b>{Gtk.utils.escape(text)}</b>") if hasattr(
+                        Gtk, "utils"
+                    ) else label.set_markup(f"<b>{text}</b>")
                 else:
                     label.set_text(text)
                 label.set_xalign(0.0)
@@ -316,13 +318,19 @@ class MainWindow:
             header_box.pack_start(make_label(_("Type"), bold=True), True, True, 0)
             header_box.pack_start(make_label(_("Speed"), bold=True), True, True, 0)
 
-            self.ui_hardware_list_memory_container.pack_start(header_box, False, False, 0)
+            self.ui_hardware_list_memory_container.pack_start(
+                header_box, False, False, 0
+            )
 
             # If no slots at all
             if not memory_slots:
                 empty_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
-                empty_box.pack_start(make_label(_("No memory information")), True, True, 0)
-                self.ui_hardware_list_memory_container.pack_start(empty_box, False, False, 0)
+                empty_box.pack_start(
+                    make_label(_("No memory information")), True, True, 0
+                )
+                self.ui_hardware_list_memory_container.pack_start(
+                    empty_box, False, False, 0
+                )
                 self.ui_hardware_list_memory_container.show_all()
                 return
 
@@ -362,7 +370,9 @@ class MainWindow:
                     row_box.pack_start(make_label(mem_type), True, True, 0)
                     row_box.pack_start(make_label(speed), True, True, 0)
 
-                self.ui_hardware_list_memory_container.pack_start(row_box, False, False, 0)
+                self.ui_hardware_list_memory_container.pack_start(
+                    row_box, False, False, 0
+                )
 
             self.ui_hardware_list_memory_container.show_all()
 
@@ -397,7 +407,6 @@ class MainWindow:
                 items = []
 
                 for device in devices:
-
                     if skip_if_type_none and device.get("type") is None:
                         continue
 
@@ -421,13 +430,30 @@ class MainWindow:
                 print("device summary error:", e)
                 label.set_text(_("Device not found"))
 
-        set_list_label(self.ui_graphics_label, hardware_info.get("graphics", []), ["vendor", "name"])
-        set_list_label(self.ui_ethernet_label, hardware_info.get("ethernet", []), ["name"])
+        set_list_label(
+            self.ui_graphics_label,
+            hardware_info.get("graphics", []),
+            ["vendor", "name"],
+        )
+        set_list_label(
+            self.ui_ethernet_label, hardware_info.get("ethernet", []), ["name"]
+        )
         set_list_label(self.ui_wifi_label, hardware_info.get("wifi", []), ["name"])
-        set_list_label(self.ui_bluetooth_label, hardware_info.get("bluetooth", []), ["vendor", "name"])
-        set_list_label(self.ui_audio_label, hardware_info.get("audio", []), ["vendor", "name"])
+        set_list_label(
+            self.ui_bluetooth_label,
+            hardware_info.get("bluetooth", []),
+            ["vendor", "name"],
+        )
+        set_list_label(
+            self.ui_audio_label, hardware_info.get("audio", []), ["vendor", "name"]
+        )
 
-        set_list_label(self.ui_storage_label, hardware_info.get("storage", []),["size", "model"], skip_if_type_none=True)
+        set_list_label(
+            self.ui_storage_label,
+            hardware_info.get("storage", []),
+            ["size", "model"],
+            skip_if_type_none=True,
+        )
 
         def set_ip_list_label(label, ip_list):
             """Formats list of (ip, iface) tuples and sets into label."""
