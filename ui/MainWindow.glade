@@ -258,7 +258,7 @@
                                 <property name="label">Pardus</property>
                                 <attributes>
                                   <attribute name="weight" value="bold"/>
-                                  <attribute name="size" value="15360"/>
+                                  <attribute name="size" value="17408"/>
                                 </attributes>
                               </object>
                               <packing>
@@ -275,7 +275,7 @@
                                 <property name="label">25.0</property>
                                 <attributes>
                                   <attribute name="weight" value="bold"/>
-                                  <attribute name="size" value="15360"/>
+                                  <attribute name="size" value="17408"/>
                                 </attributes>
                               </object>
                               <packing>
