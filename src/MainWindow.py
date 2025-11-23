@@ -9,7 +9,7 @@ from gi.repository import GLib, Gio, Gtk, Gdk
 import locale
 from locale import gettext as _
 
-from util import OSManager, ComputerManager, HardwareDetector
+from util import OSManager, ComputerManager, HardwareDetector, network
 
 # Translation Constants:
 APPNAME = "pardus-about"
@@ -343,6 +343,41 @@ class MainWindow:
         set_list_label(self.ui_audio_label, hardware_info.get("audio", []), ["vendor", "name"])
 
         set_list_label(self.ui_storage_label, hardware_info.get("storage", []),["size", "model"], skip_if_type_none=True)
+
+        def set_ip_list_label(label, ip_list):
+            """Formats list of (ip, iface) tuples and sets into label."""
+            try:
+                if not ip_list:
+                    label.set_text(_("Unknown"))
+                    return
+
+                items = []
+                for ip, iface in ip_list:
+                    # Skip loopback
+                    if iface == "lo":
+                        continue
+
+                    iface_str = str(iface) if iface else ""
+                    ip_str = str(ip) if ip else ""
+
+                    line = f"{iface_str} {ip_str}".strip()
+                    if line:
+                        items.append(line)
+
+                # If everything was filtered out → not found
+                if not items:
+                    label.set_text(_("Unknown"))
+                    return
+
+                label.set_text("\n".join(items))
+
+            except Exception as e:
+                print("ip list error:", e)
+                label.set_text(_("Unknown"))
+
+        set_ip_list_label(self.ui_private_ip_label, network.get_local_ip())
+
+        self.ui_public_ip_label.set_text(network.get_wan_ip())
 
         task.return_boolean(True)
 
