@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pardus-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-14 12:52+0300\n"
+"POT-Creation-Date: 2025-11-23 23:55+0300\n"
 "PO-Revision-Date: 2024-03-18 15:57+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Português <hugokarvalho@gotmail.com>\n"
@@ -19,244 +19,353 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: ui/MainWindow.glade:40
-msgid "Export System Report"
-msgstr "Exportar relatório do sistema"
-
-#: ui/MainWindow.glade:96
-msgid "About App"
-msgstr "Acerca da Aplicação"
-
-#: ui/MainWindow.glade:309
-#, fuzzy
-msgid "<b>Hardware:</b>"
-msgstr "<b>Kernel:</b>"
-
-#: ui/MainWindow.glade:353
-msgid "Hardware has a Windows OEM key"
+#: ui/MainWindow.glade:24 src/MainWindow.py:313
+msgid "Slot"
 msgstr ""
 
-#: ui/MainWindow.glade:380
-msgid "<b>Kernel:</b>"
-msgstr "<b>Kernel:</b>"
-
-#: ui/MainWindow.glade:426
-msgid "<b>Desktop:</b>"
-msgstr "<b>Ambiente de trabalho:</b>"
-
-#: ui/MainWindow.glade:471
-msgid "<b>CPU:</b>"
-msgstr "<b>CPU:</b>"
-
-#: ui/MainWindow.glade:516
-msgid "<b>GPU:</b>"
-msgstr "<b>GPU:</b>"
-
-#: ui/MainWindow.glade:546
-msgid "GPU running as llvmpipe"
-msgstr "GPU a executar como llvmpipe"
-
-#: ui/MainWindow.glade:589
-msgid "<b>RAM:</b>"
-msgstr "<b>RAM:</b>"
-
-#: ui/MainWindow.glade:634
-msgid "<b>Public IP:</b>"
-msgstr "<b>IP Público:</b>"
-
-#: ui/MainWindow.glade:697
-msgid "<b>Local IP:</b>"
-msgstr "<b>IP Local:</b>"
-
-#: ui/MainWindow.glade:801
-msgid "About This Computer"
-msgstr "Acerca deste computador"
-
-#: ui/MainWindow.glade:839
-msgid "About Pardus About Application"
-msgstr "Sobre a aplicação Acerca do Pardus"
-
-#: ui/MainWindow.glade:847
-msgid "Get info about your Pardus system."
-msgstr "Obtenha informação sobre o seu sistema Pardus."
-
-#: ui/MainWindow.glade:849
-msgid "Website"
-msgstr "Website"
-
-#. Name Surname <example@examplemail.com>
-#: ui/MainWindow.glade:853
-msgid "translator-credits"
-msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>"
-
-#: ui/MainWindow.glade:887 ui/MainWindow.glade:909
-msgid "Gathering system logs..."
-msgstr "A recolher registos do sistema..."
-
-#: ui/MainWindow.glade:943
-msgid "Your system report has been exported to the desktop."
-msgstr "O relatório do sistema foi exportado para a área de trabalho."
-
-#: ui/MainWindow.glade:944
-msgid "~/Desktop/pardus_system_report.tar.gz"
-msgstr "~/Área de Trabalho/pardus_system_report.tar.gz"
-
-#: src/MainWindow.py:107
-msgid "Pardus About"
-msgstr "Acerca do Pardus"
-
-#: src/MainWindow.py:111
-msgid "About Pardus About"
-msgstr "Sobre o Acerca do Pardus"
-
-#: src/utils.py:328
-msgid "Other"
-msgstr ""
-
-#: src/utils.py:329
+#: ui/MainWindow.glade:39 ui/MainWindow.glade:81 ui/MainWindow.glade:123
+#: ui/MainWindow.glade:581 ui/MainWindow.glade:661 ui/MainWindow.glade:741
+#: ui/MainWindow.glade:824 ui/MainWindow.glade:904 ui/MainWindow.glade:984
+#: ui/MainWindow.glade:1064 ui/MainWindow.glade:1145 ui/MainWindow.glade:1226
+#: ui/MainWindow.glade:1306 ui/MainWindow.glade:1386 ui/MainWindow.glade:1467
+#: ui/MainWindow.glade:1643 ui/MainWindow.glade:1685 ui/MainWindow.glade:1727
+#: ui/MainWindow.glade:1894 ui/MainWindow.glade:1936 ui/MainWindow.glade:1978
+#: ui/MainWindow.glade:2031 ui/MainWindow.glade:2073 ui/MainWindow.glade:2239
+#: ui/MainWindow.glade:2281 ui/MainWindow.glade:2323 src/MainWindow.py:333
+#: src/MainWindow.py:436 src/MainWindow.py:454 src/MainWindow.py:461
 msgid "Unknown"
 msgstr ""
 
-#: src/utils.py:330
+#: ui/MainWindow.glade:66 ui/MainWindow.glade:1628 ui/MainWindow.glade:2224
+#: src/MainWindow.py:314
+msgid "Vendor"
+msgstr ""
+
+#: ui/MainWindow.glade:108 ui/MainWindow.glade:1670 ui/MainWindow.glade:2266
+msgid "Model"
+msgstr ""
+
+#: ui/MainWindow.glade:174
+msgid "About App"
+msgstr "Acerca da Aplicação"
+
+#: ui/MainWindow.glade:335
+msgid "Username"
+msgstr ""
+
+#: ui/MainWindow.glade:376
+msgid "Hostname"
+msgstr ""
+
+#: ui/MainWindow.glade:430 src/MainWindow.py:570
+msgid "Show Hardware Details"
+msgstr ""
+
+#: ui/MainWindow.glade:444
+#, fuzzy
+msgid "Show System Report"
+msgstr "Exportar relatório do sistema"
+
+#: ui/MainWindow.glade:490
+msgid "Gathering system logs..."
+msgstr "A recolher registos do sistema..."
+
+#: ui/MainWindow.glade:568
+msgid "<span size=\"small\">Computer</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:648
+msgid "<span size=\"small\">Processor</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:728
+msgid "<span size=\"small\">Memory</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:811
+msgid "<span size=\"small\">Storage</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:891
+msgid "<span size=\"small\">Graphics</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:971
+msgid "<span size=\"small\">Desktop</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:1051
+msgid "<span size=\"small\">WiFi</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:1132
+msgid "<span size=\"small\">Ethernet</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:1213
+msgid "<span size=\"small\">Bluetooth</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:1293
+msgid "<span size=\"small\">Audio</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:1373
+msgid "<span size=\"small\">Private IP</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:1454
+msgid "<span size=\"small\">Public IP</span>"
+msgstr ""
+
+#: ui/MainWindow.glade:1558
+msgid "Computer Info"
+msgstr ""
+
+#: ui/MainWindow.glade:1712
+msgid "Family"
+msgstr ""
+
+#: ui/MainWindow.glade:1808
+msgid "Operating System"
+msgstr ""
+
+#: ui/MainWindow.glade:1879
+msgid "Name"
+msgstr ""
+
+#: ui/MainWindow.glade:1921
+msgid "Codename"
+msgstr ""
+
+#: ui/MainWindow.glade:1963
+msgid "Version"
+msgstr ""
+
+#: ui/MainWindow.glade:2016
+#, fuzzy
+msgid "Kernel"
+msgstr "<b>Kernel:</b>"
+
+#: ui/MainWindow.glade:2058
 #, fuzzy
 msgid "Desktop"
 msgstr "<b>Ambiente de trabalho:</b>"
 
-#: src/utils.py:331
-msgid "Low Profile Desktop"
+#: ui/MainWindow.glade:2154
+msgid "Processor"
 msgstr ""
 
-#: src/utils.py:332
-msgid "Pizza Box"
+#: ui/MainWindow.glade:2308
+msgid "Cores / Threads"
 msgstr ""
 
-#: src/utils.py:333
-msgid "Mini Tower"
+#: ui/MainWindow.glade:2404
+msgid "Memory"
 msgstr ""
 
-#: src/utils.py:334
-msgid "Tower"
+#: ui/MainWindow.glade:2537
+msgid "Storage"
 msgstr ""
 
-#: src/utils.py:335
-msgid "Portable"
+#: ui/MainWindow.glade:2671
+msgid "Graphics"
 msgstr ""
 
-#: src/utils.py:336
-msgid "Laptop"
+#: ui/MainWindow.glade:2805
+msgid "Display"
 msgstr ""
 
-#: src/utils.py:337
-msgid "Notebook"
+#: ui/MainWindow.glade:2939
+msgid "Ethernet"
 msgstr ""
 
-#: src/utils.py:338
-msgid "Hand Held"
+#: ui/MainWindow.glade:3073
+msgid "Wifi"
 msgstr ""
 
-#: src/utils.py:339
-msgid "Docking Station"
+#: ui/MainWindow.glade:3207
+msgid "Bluetooth"
 msgstr ""
 
-#: src/utils.py:340
-msgid "All in One"
+#: ui/MainWindow.glade:3341
+msgid "Audio"
 msgstr ""
 
-#: src/utils.py:341
-msgid "Sub Notebook"
+#: ui/MainWindow.glade:3475
+msgid "Camera"
 msgstr ""
 
-#: src/utils.py:342
-msgid "Space-Saving"
+#: ui/MainWindow.glade:3609
+msgid "Keyboard"
 msgstr ""
 
-#: src/utils.py:343
-msgid "Lunch Box"
+#: ui/MainWindow.glade:3743
+msgid "Mouse"
 msgstr ""
 
-#: src/utils.py:344
-msgid "Main System Chassis"
+#: ui/MainWindow.glade:3877
+msgid "Fingerprint"
 msgstr ""
 
-#: src/utils.py:345
-msgid "Expansion Chassis"
+#: ui/MainWindow.glade:4011
+msgid "Printers"
 msgstr ""
 
-#: src/utils.py:346
-msgid "SubChassis"
+#: ui/MainWindow.glade:4111
+msgid "Details"
 msgstr ""
 
-#: src/utils.py:347
-msgid "Bus Expansion Chassis"
+#: ui/MainWindow.glade:4176
+#, fuzzy
+msgid "Pardus Info"
+msgstr "Acerca do Pardus"
+
+#: ui/MainWindow.glade:4185
+msgid "About This Computer"
+msgstr "Acerca deste computador"
+
+#: ui/MainWindow.glade:4209
+msgid "About Pardus About Application"
+msgstr "Sobre a aplicação Acerca do Pardus"
+
+#: ui/MainWindow.glade:4217
+msgid "Get info about your Pardus system."
+msgstr "Obtenha informação sobre o seu sistema Pardus."
+
+#: ui/MainWindow.glade:4219
+msgid "Website"
+msgstr "Website"
+
+#: ui/MainWindow.glade:4220
+msgid ""
+"This program comes with absolutely no warranty.\n"
+"See the <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GNU General "
+"Public License, version 3 or later</a> for details."
 msgstr ""
 
-#: src/utils.py:348
-msgid "Peripheral Chassis"
+#. Name Surname <example@examplemail.com>
+#: ui/MainWindow.glade:4226
+msgid "translator-credits"
+msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>"
+
+#: ui/MainWindow.glade:4264
+msgid "Submit"
 msgstr ""
 
-#: src/utils.py:349
-msgid "RAID Chassis"
+#: ui/MainWindow.glade:4283
+msgid ""
+"The information shared will only be used for hardware compatibility "
+"statistics and to be able to troubleshoot compatibility issues in advance.\n"
+"\n"
+"No personal data is collected.\n"
+"\n"
+"Hardware information is not shared with third parties and is only sent once "
+"during this process."
 msgstr ""
 
-#: src/utils.py:350
-msgid "Rack Mount Chassis"
+#: ui/MainWindow.glade:4312
+msgid "Below is the data which will be sent:"
 msgstr ""
 
-#: src/utils.py:351
-msgid "Sealed-case PC"
+#: ui/MainWindow.glade:4383
+msgid "Copy Report"
 msgstr ""
 
-#: src/utils.py:352
-msgid "Multi-system chassis"
+#: ui/MainWindow.glade:4399
+msgid "Send"
 msgstr ""
 
-#: src/utils.py:353
-msgid "Compact PCI"
+#: ui/MainWindow.glade:4439
+#, fuzzy
+msgid "System Report has been copied to your clipboard!"
+msgstr "O relatório do sistema foi exportado para a área de trabalho."
+
+#: src/MainWindow.py:63
+#, fuzzy
+msgid "About Pardus"
+msgstr "Sobre o Acerca do Pardus"
+
+#: src/MainWindow.py:315
+msgid "Size"
 msgstr ""
 
-#: src/utils.py:354
-msgid "Advanced TCA"
+#: src/MainWindow.py:316
+msgid "Type"
 msgstr ""
 
-#: src/utils.py:355
-msgid "Blade"
+#: src/MainWindow.py:317
+msgid "Speed"
 msgstr ""
 
-#: src/utils.py:356
-msgid "Blade Enclosure"
+#: src/MainWindow.py:324
+msgid "No memory information"
 msgstr ""
 
-#: src/utils.py:357
-msgid "Tablet"
+#: src/MainWindow.py:346
+msgid "empty"
 msgstr ""
 
-#: src/utils.py:358
-msgid "Convertible"
+#: src/MainWindow.py:394 src/MainWindow.py:415 src/MainWindow.py:422
+msgid "Device not found"
 msgstr ""
 
-#: src/utils.py:359
-msgid "Detachable"
+#: src/MainWindow.py:494
+msgid "Thank you for your contribution."
 msgstr ""
 
-#: src/utils.py:360
-msgid "IoT Gateway"
+#: src/MainWindow.py:495
+msgid "You can find your submission here:"
 msgstr ""
 
-#: src/utils.py:361
-msgid "Embedded PC"
+#: src/MainWindow.py:512
+msgid "An error occured while sending the data."
 msgstr ""
 
-#: src/utils.py:362
-msgid "Mini PC"
+#: src/MainWindow.py:513
+msgid "Returned message from the server:"
 msgstr ""
 
-#: src/utils.py:363
-msgid "Stick PC"
+#: src/MainWindow.py:519
+msgid "Connection Failed"
 msgstr ""
 
-#: src/utils.py:366
-msgid "Virtual Machine"
+#: src/MainWindow.py:521
+msgid ""
+"If you are connected to the internet, then our servers have some problem."
 msgstr ""
+
+#: src/MainWindow.py:567
+msgid "Show Summary"
+msgstr ""
+
+#, fuzzy
+#~ msgid "<b>Hardware:</b>"
+#~ msgstr "<b>Kernel:</b>"
+
+#~ msgid "<b>Desktop:</b>"
+#~ msgstr "<b>Ambiente de trabalho:</b>"
+
+#~ msgid "<b>CPU:</b>"
+#~ msgstr "<b>CPU:</b>"
+
+#~ msgid "<b>GPU:</b>"
+#~ msgstr "<b>GPU:</b>"
+
+#~ msgid "GPU running as llvmpipe"
+#~ msgstr "GPU a executar como llvmpipe"
+
+#~ msgid "<b>RAM:</b>"
+#~ msgstr "<b>RAM:</b>"
+
+#~ msgid "<b>Public IP:</b>"
+#~ msgstr "<b>IP Público:</b>"
+
+#~ msgid "<b>Local IP:</b>"
+#~ msgstr "<b>IP Local:</b>"
+
+#~ msgid "~/Desktop/pardus_system_report.tar.gz"
+#~ msgstr "~/Área de Trabalho/pardus_system_report.tar.gz"
 
 #~ msgid "Physical RAM"
 #~ msgstr "RAM física"

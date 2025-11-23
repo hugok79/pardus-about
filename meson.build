@@ -1,4 +1,4 @@
-project('pardus-lightdm-greeter')
+project('pardus-about')
 
 subdir('po')
 subdir('debian')
@@ -20,3 +20,7 @@ install_data('tr.org.pardus.pkexec.pardus-about.policy', install_dir : '/usr/sha
 # desktop files
 install_data('tr.org.pardus.about.desktop', install_dir : '/usr/share/applications/')
 install_data('tr.org.pardus.about-hardware.desktop', install_dir : '/usr/share/applications/')
+
+# command
+install_data('pardus-about.py', install_dir : '/usr/bin', rename: 'pardus-about')
+
