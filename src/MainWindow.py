@@ -252,7 +252,11 @@ class MainWindow:
         self.ui_detail_os_codename_label.set_text(str(pardus_info["os_codename"]))
         self.ui_detail_os_version_label.set_text(str(pardus_info["os_version"]))
         self.ui_detail_os_kernel_label.set_text(pardus_info["kernel"])
-        desktop_info = f"{pardus_info["desktop"]} {pardus_info["desktop_version"]} ({pardus_info["display"]})"
+        desktop_info = "{} {} ({})".format(
+            pardus_info["desktop"],
+            pardus_info["desktop_version"],
+            pardus_info["display"]
+        )
         self.ui_detail_os_desktop_label.set_text(desktop_info)
         self.ui_desktop_label.set_text(desktop_info)
 
