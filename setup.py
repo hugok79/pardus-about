@@ -91,7 +91,10 @@ data_files = [
             "data/assets/pardus-about-publicip.svg",
             "data/assets/pardus-about-storage.svg",
             "data/assets/pardus-about-touchpad.svg",
-            "data/assets/pardus-about-wifi.svg"
+            "data/assets/pardus-about-wifi.svg",
+            "data/assets/pardus-about-bios.svg",
+            "data/assets/pardus-about-main.svg",
+            "data/assets/pardus-about-network-card.svg"
         ],
     ),
 ] + create_mo_files()
