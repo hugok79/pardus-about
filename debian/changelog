@@ -1,3 +1,196 @@
+pardus-about (1.0.0~beta1) unstable; urgency=medium
+
+  [ Osman Coskun ]
+  * feat: improved retrieving system info
+  * fix: gpu order
+  * feat: cli mode
+
+  [ Fatih Altun ]
+  * Update copyright
+  * Add python3-cairosvg to depends
+
+  [ Osman Coskun ]
+  * fix(gpu): vendors added
+  * feat(net): interface and ip added on cli mode
+
+  [ Fatih Altun ]
+  * Update copyright
+
+  [ Osman Coskun ]
+  * gitignore updated
+  * fix(net): lo removed from network section
+  * fix: xfce version gui/tui
+
+  [ Emin Fedar ]
+  * feat: better RAM size
+
+  [ sulincix ]
+  * more error checks
+  * python3-cairosvg and python3-apt are optional dependency. Now you can run under non-debian distributions
+  * add hardware information
+  * check board_name if exists, else product_name
+  * OEM check indicator
+
+  [ Ali Riza KESKIN ]
+  * fix thread issue about local and public ip fetch and remove useless GLib.idle_add
+  * better hardware name info
+  * fix duplicated info for board and product names are same hardwares
+  * add X11/Wayland which one running information
+  * hardware name fetch method update
+  * fix cli issues and remove duplicated function
+  * remove gudev dependency
+  * better way to load icon
+  * add board_name information
+  * fix for non-dmi devices
+  * always use product_name
+  * device type added
+  * chassis type info added
+  * add translation
+  * check vm
+  * add hardware name fetch from org.freedesktop.hostname1. if nosystemd fallback to current mechanism
+
+  [ Mehmet Zahid Berktas ]
+  * feat: implement v2
+
+  [ Emin Fedar ]
+  * feat: submit window added, refactored managers, ACPI support
+
+  [ aliriza ]
+  * More error checks added. * dbus connection issues (or service unavailable) handled * hwdb file check added before read
+
+  [ Emin Fedar ]
+  * feat: added MonitorManager to obtain EDID informations
+  * fix: monitors object format according to json, make it singleton(lazy)
+
+  [ Mehmet Zahid Berktas ]
+  * feat: main ui updated with icons
+  * feat: hardware details ui updated
+
+  [ Emin Fedar ]
+  * feat: added printer detection support
+  * feat: added mouse, touchpad, touchscreen and keyboard support
+  * feat: cache get_hid_devices like singleton
+
+  [ Mehmet Zahid Berktas ]
+  * feat: hardware details reveal box structure completed
+  * feat: added new icons
+  * feat: added missing icon
+  * feat: icon set changed, layout updated
+
+  [ Yusuf Düzgün ]
+  * add Depends gir1.2-gudev-1.0
+
+  [ Emin Fedar ]
+  * feat: added DiskManager.py
+  * fix: "pci_id" -> "id" -> "device_id"
+  * feat!: new OSManager, "os" added to all_device_info
+  * feat: added disks, printers and HID devices to hardware_info
+  * fix: DiskManager remove vendor
+  * fix: remove extra "type" from hid devices
+  * fix: broken f-strings, formatting
+  * fix: add pkexec as dependency
+  * fix: DiskManager exclude usb drives from storage
+  * fix: remove printer ip information
+  * fix: TODO REMOVE THIS
+  * fix: revert latest categoryless usb devices commit a635c6e
+  * fix: remove unnecessary prints
+  * fix: new printer format
+  * fix: printer detection on usb
+  * fix: printer detection on usb, better usb handling
+  * fix: hardware detection appending pci and usb devices to list
+
+  [ Ali Riza KESKIN ]
+  * fixes for non-dmi devices
+  * fix memory detection issue for non-dmi devices
+
+  [ Emin Fedar ]
+  * fix: prints
+  * fix: prints
+  * fix: prints
+
+  [ Ali Riza KESKIN ]
+  * add hwdata lookup path
+
+  [ Emin Fedar ]
+  * fix: prints
+
+  [ Ali Riza KESKIN ]
+  * add usb audio devices
+  * fix typec ethernet detection
+  * add desktop and version information
+  * desktop version determinate improvement
+  * OEM information and deep mem sleep support added
+  * add boot type
+  * typo fix
+
+  [ Mehmet Zahid Berktas ]
+  * fix: small improvements
+
+  [ Ali Riza KESKIN ]
+  * fix desktop_info
+  * add language info
+
+  [ Yusuf Düzgün ]
+  * update intel brand removed
+  * add new icons
+  * update ui
+  * update setup.py for new icons
+
+  [ Ali Riza KESKIN ]
+  * parse serio devices
+  * add serio device information into json
+  * add rootfs type
+
+  [ Fatih Altun ]
+  * Add ellipsize end to labels
+  * Update initial window size
+  * Fix newline bug
+  * Add distro id and codename to ui
+  * Add hostname, username to sidebox and Update some ui grid
+  * Fix all summary fields
+
+  [ Ali Riza KESKIN ]
+  * ip determinate functions added.
+
+  [ Fatih Altun ]
+  * Add ip adresses to ui
+  * Add Memory details to ui
+
+  [ Ali Riza KESKIN ]
+  * fix hardcoded actions.py path
+
+  [ Emin Fedar ]
+  * fix: remote tmp/
+  * fix: add displays to json
+  * feat: new 2025 pci.ids
+  * feat: add hwdata dependency
+  * fix: remove pci.ids
+  * feat: usb, i2c, bluetooth bus detection support for HID devices
+  * fix: silent edid data format errors
+
+  [ Ali Riza KESKIN ]
+  * fix pci.ids path and lookup function
+  * remove unused print
+  * convert to meson
+  * fix packaging issues
+  * install icons
+
+  [ Emin Fedar ]
+  * fix: --hardware argument to open details page
+
+  [ Fatih Altun ]
+  * Add all hardware details to ui
+  * Fix hardware detail alignments
+  * Fix other hardware detail alignments too
+  * Update pot file
+  * Update Turkish translations
+  * Update some translatables
+  * Update pot file
+  * Update Turkish translations
+  * Fix typo
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Mon, 24 Nov 2025 02:03:42 +0300
+
 pardus-about (0.6.3) unstable; urgency=medium
 
   [ Othamae ]
