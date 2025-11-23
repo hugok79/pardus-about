@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-24 01:54+0300\n"
-"PO-Revision-Date: 2025-11-24 01:55+0300\n"
+"PO-Revision-Date: 2025-11-24 01:59+0300\n"
 "Last-Translator: Fatih Altun <fatih.altun@pardus.org.tr>\n"
 "Language-Team: Turkish <dev@pardus.org.tr>\n"
 "Language: tr\n"
@@ -237,7 +237,7 @@ msgstr "Fatih Altun <fatih.altun@pardus.org.tr>"
 
 #: ui/MainWindow.glade:4054
 msgid "Submit"
-msgstr "Gönders"
+msgstr "Gönder"
 
 #: ui/MainWindow.glade:4073
 msgid ""
