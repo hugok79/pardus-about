@@ -3962,7 +3962,7 @@
                                                     <property name="margin-top">12</property>
                                                     <property name="margin-bottom">12</property>
                                                     <property name="pixel-size">24</property>
-                                                    <property name="icon-name">pardus-about-printers</property>
+                                                    <property name="icon-name">pardus-about-printer</property>
                                                   </object>
                                                   <packing>
                                                     <property name="expand">False</property>
