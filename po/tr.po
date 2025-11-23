@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-24 01:36+0300\n"
-"PO-Revision-Date: 2025-11-24 01:46+0300\n"
+"POT-Creation-Date: 2025-11-24 01:54+0300\n"
+"PO-Revision-Date: 2025-11-24 01:55+0300\n"
 "Last-Translator: Fatih Altun <fatih.altun@pardus.org.tr>\n"
 "Language-Team: Turkish <dev@pardus.org.tr>\n"
 "Language: tr\n"
@@ -39,11 +39,16 @@ msgid "Unknown"
 msgstr "Bilinmeyen"
 
 #: ui/MainWindow.glade:66 ui/MainWindow.glade:1634 ui/MainWindow.glade:2030
-#: src/MainWindow.py:336
+#: src/MainWindow.py:336 src/MainWindow.py:485 src/MainWindow.py:545
+#: src/MainWindow.py:603 src/MainWindow.py:665 src/MainWindow.py:726
+#: src/MainWindow.py:789 src/MainWindow.py:853 src/MainWindow.py:1039
 msgid "Vendor"
 msgstr "Üretici"
 
 #: ui/MainWindow.glade:108 ui/MainWindow.glade:1679 ui/MainWindow.glade:2075
+#: src/MainWindow.py:423 src/MainWindow.py:487 src/MainWindow.py:547
+#: src/MainWindow.py:605 src/MainWindow.py:667 src/MainWindow.py:728
+#: src/MainWindow.py:791 src/MainWindow.py:855
 msgid "Model"
 msgstr "Model"
 
@@ -121,7 +126,7 @@ msgstr "<span size=\"small\">Dış IP</span>"
 
 #: ui/MainWindow.glade:1558
 msgid "Computer Info"
-msgstr "Bilgisayar Bilgisi"
+msgstr "Bilgisayar"
 
 #: ui/MainWindow.glade:1724
 msgid "Family"
@@ -151,7 +156,7 @@ msgstr "Depolama"
 msgid "Graphics"
 msgstr "Grafik"
 
-#: ui/MainWindow.glade:2614
+#: ui/MainWindow.glade:2614 src/MainWindow.py:1159
 msgid "Display"
 msgstr "Görüntü"
 
@@ -272,11 +277,11 @@ msgstr "Sistem Raporu panonuza kopyalandı!"
 msgid "About Pardus"
 msgstr "Pardus Hakkında"
 
-#: src/MainWindow.py:337
+#: src/MainWindow.py:337 src/MainWindow.py:421
 msgid "Size"
 msgstr "Boyut"
 
-#: src/MainWindow.py:338
+#: src/MainWindow.py:338 src/MainWindow.py:422
 msgid "Type"
 msgstr "Tip"
 
@@ -300,6 +305,37 @@ msgstr "boş"
 #: src/MainWindow.py:1220
 msgid "Device not found"
 msgstr "Aygıt bulunamadı"
+
+#: src/MainWindow.py:486 src/MainWindow.py:604 src/MainWindow.py:666
+#: src/MainWindow.py:727 src/MainWindow.py:790 src/MainWindow.py:854
+#: src/MainWindow.py:916 src/MainWindow.py:978
+msgid "Driver"
+msgstr "Sürücü"
+
+#: src/MainWindow.py:546
+msgid "Resolution"
+msgstr "Çözünürlük"
+
+#: src/MainWindow.py:915 src/MainWindow.py:977 src/MainWindow.py:1040
+#: src/MainWindow.py:1096 src/MainWindow.py:1155
+msgid "Name"
+msgstr "İsim"
+
+#: src/MainWindow.py:917 src/MainWindow.py:979 src/MainWindow.py:1097
+msgid "Connection"
+msgstr "Bağlantı"
+
+#: src/MainWindow.py:1156
+msgid "Version"
+msgstr "Versiyon"
+
+#: src/MainWindow.py:1157
+msgid "Kernel"
+msgstr "Çekirdek"
+
+#: src/MainWindow.py:1158
+msgid "Desktop"
+msgstr "Masaüstü"
 
 #: src/MainWindow.py:1309
 msgid "Thank you for your contribution."
@@ -329,13 +365,6 @@ msgstr "İnternete bağlıysanız, sunucularımızda bir sorun var demektir."
 #: src/MainWindow.py:1382
 msgid "Show Summary"
 msgstr "Özeti göster"
-
-#, fuzzy
-#~ msgid "Kernel"
-#~ msgstr "<b>Çekirdek:</b>"
-
-#~ msgid "Desktop"
-#~ msgstr "Masaüstü"
 
 #~ msgid "<b>Hardware:</b>"
 #~ msgstr "<b>Donanım:</b>"
