@@ -289,45 +289,23 @@ class MainWindow:
         # Lazy Init PCI & USB devices information singleton
         hardware_info = HardwareDetector.get_hardware_info()
 
-        try:
-            graphics_summary = ""
-            for device in hardware_info["graphics"]:
-                graphics_summary += f"{device['vendor']} {device['name']}\n"
-            self.ui_graphics_label.set_text(graphics_summary)
-        except:
-            pass
+        def set_list_label(label, devices, fields):
+            """Builds text safely without trailing newline."""
+            try:
+                items = []
+                for device in devices:
+                    text = " ".join(device.get(f, "") for f in fields).strip()
+                    if text:
+                        items.append(text)
+                label.set_text("\n".join(items))
+            except Exception:
+                pass
 
-        try:
-            ethernet_summary = ""
-            for device in hardware_info["ethernet"]:
-                ethernet_summary += f"{device['name']}\n"
-            self.ui_ethernet_label.set_text(ethernet_summary)
-        except:
-            pass
-
-        try:
-            wifi_summary = ""
-            for device in hardware_info["wifi"]:
-                wifi_summary += f"{device['name']}\n"
-            self.ui_wifi_label.set_text(wifi_summary)
-        except:
-            pass
-
-        try:
-            bluetooth_summary = ""
-            for device in hardware_info["bluetooth"]:
-                bluetooth_summary += f"{device['vendor']} {device['name']}\n"
-            self.ui_bluetooth_label.set_text(bluetooth_summary)
-        except:
-            pass
-
-        try:
-            audio_summary = ""
-            for device in hardware_info["audio"]:
-                audio_summary += f"{device['vendor']} {device['name']}\n"
-            self.ui_audio_label.set_text(audio_summary)
-        except:
-            pass
+        set_list_label(self.ui_graphics_label, hardware_info.get("graphics", []), ["vendor", "name"])
+        set_list_label(self.ui_ethernet_label, hardware_info.get("ethernet", []), ["name"])
+        set_list_label(self.ui_wifi_label, hardware_info.get("wifi", []), ["name"])
+        set_list_label(self.ui_bluetooth_label, hardware_info.get("bluetooth", []), ["vendor", "name"])
+        set_list_label(self.ui_audio_label, hardware_info.get("audio", []), ["vendor", "name"])
 
         task.return_boolean(True)
 
