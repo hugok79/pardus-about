@@ -4008,7 +4008,8 @@
     <property name="website-label" translatable="yes">Website</property>
     <property name="license" translatable="yes">This program comes with absolutely no warranty.
 See the &lt;a href="https://www.gnu.org/licenses/gpl-3.0.html"&gt;GNU General Public License, version 3 or later&lt;/a&gt; for details.</property>
-    <property name="authors">Emin Fedar &lt;emin.fedar@pardus.org.tr&gt;
+    <property name="authors">Ali Riza Keskin &lt;aliriza.keskin@pardus.org.tr&gt;
+Emin Fedar &lt;emin.fedar@pardus.org.tr&gt;
 Fatih Altun &lt;fatih.altun@pardus.org.tr&gt;
 Osman Coskun &lt;osman.coskun@pardus.org.tr&gt;
 Mehmet Zahid Berktas &lt;mehmet.berktas@pardus.org.tr&gt;
