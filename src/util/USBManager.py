@@ -285,6 +285,7 @@ def match_driver_with_category(driver):
     device_classes = {
         "btusb": "bluetooth",
         "uvcvideo": "camera",
+        "cdc_ether": "ethernet",
     }
 
     if driver in device_classes:
@@ -294,6 +295,16 @@ def match_driver_with_category(driver):
 
 
 usb_devices = None
+
+
+def is_hid_device(usb):
+    def match(var1, var2):
+        return var1.lower() == "0x"+var2.lower()
+    for hid in get_hid_devices():
+        if match(hid["vendor_id"] ,usb["vendor_id"]) and \
+            match(hid["product_id"], usb["product_id"]):
+            return True
+    return False
 
 
 def get_usb_devices():
@@ -324,8 +335,10 @@ def get_usb_devices():
             category = class_category
         elif interface_category:
             category = interface_category
+        elif is_hid_device(usb):
+            category = "usb-hid"
         else:
-            continue
+            category = "usb"
 
         if category not in data:
             data[category] = []
