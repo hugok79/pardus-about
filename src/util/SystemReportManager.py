@@ -49,6 +49,7 @@ def generate_report():
         f.write(hardware_info)
 
     # Program outputs
+    run_and_save(["env", "-i", "/bin/bash", "-c", "source /etc/profile ; env"])
     run_and_save(["dmesg"])
     run_and_save(["journalctl", "-q", "-n", "1000"])
     run_and_save(["timedatectl"])
@@ -62,6 +63,8 @@ def generate_report():
     run_and_save(["lsb_release"])
     run_and_save(["lsusb"])
     run_and_save(["lsmod"])
+    run_and_save(["blkid"])
+    run_and_save(["fdisk", "-l", "-x"])
     run_and_save(["lspci", "-nnvv"])
     run_and_save(["mount", "-l"])
     run_and_save(["netstat", "-W", "-neopa"])
@@ -83,6 +86,7 @@ def generate_report():
 
     # Copy configs
     copy("/etc/hosts")
+    copy("/etc/resolv.conf")
     copy("/etc/environment")
     copy("/etc/apt/sources.list")
     copy("/etc/apt/sources.list.d")
