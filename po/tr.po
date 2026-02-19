@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 14:19+0300\n"
+"POT-Creation-Date: 2026-02-19 14:34+0300\n"
 "PO-Revision-Date: 2025-11-24 01:59+0300\n"
 "Last-Translator: Fatih Altun <fatih.altun@pardus.org.tr>\n"
 "Language-Team: Turkish <dev@pardus.org.tr>\n"
@@ -99,7 +99,7 @@ msgstr ""
 #. Name Surname <example@examplemail.com>
 #: ui/MainWindow.glade:821
 msgid "translator-credits"
-msgstr "Fatih Altun <fatih.altun@pardus.org.tr>"
+msgstr "Fatih Altun <fatih.altun@pardus.org.tr>, Emin Fedar <emin.fedar@pardus.org.tr>"
 
 #: ui/MainWindow.glade:859
 msgid "Submit"
@@ -148,43 +148,42 @@ msgid "Device not found"
 msgstr "Aygıt bulunamadı"
 
 #: src/MainWindow.py:229
-#, fuzzy
 msgid "Computer"
 msgstr "Bilgisayar"
 
-#: src/MainWindow.py:237
+#: src/MainWindow.py:237 src/MainWindow.py:398
 msgid "Desktop"
 msgstr "Masaüstü"
 
-#: src/MainWindow.py:246
+#: src/MainWindow.py:246 src/MainWindow.py:415
 msgid "Processor"
 msgstr "İşlemci"
 
-#: src/MainWindow.py:255
+#: src/MainWindow.py:255 src/MainWindow.py:489
 msgid "Graphics"
 msgstr "Grafik"
 
-#: src/MainWindow.py:267
+#: src/MainWindow.py:267 src/MainWindow.py:448
 msgid "Memory"
 msgstr "Hafıza"
 
-#: src/MainWindow.py:276
+#: src/MainWindow.py:276 src/MainWindow.py:468
 msgid "Storage"
 msgstr "Depolama"
 
-#: src/MainWindow.py:289
+#: src/MainWindow.py:289 src/MainWindow.py:569
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/MainWindow.py:300
+#: src/MainWindow.py:300 src/MainWindow.py:588
 msgid "Audio"
 msgstr "Ses"
 
-#: src/MainWindow.py:311
+#: src/MainWindow.py:311 src/MainWindow.py:550
 msgid "Wifi"
 msgstr "Kablosuz"
 
-#: src/MainWindow.py:320
+#: src/MainWindow.py:320 src/MainWindow.py:530
 msgid "Ethernet"
 msgstr "Kablolu"
 
@@ -201,9 +200,105 @@ msgstr "Yerel IP"
 msgid "Public IP"
 msgstr "Dış IP:"
 
+#: src/MainWindow.py:382
+msgid "Computer Info"
+msgstr "Bilgisayar"
+
+#: src/MainWindow.py:383 src/MainWindow.py:416 src/MainWindow.py:449
+#: src/MainWindow.py:490 src/MainWindow.py:511 src/MainWindow.py:531
+#: src/MainWindow.py:551 src/MainWindow.py:570 src/MainWindow.py:589
+#: src/MainWindow.py:608 src/MainWindow.py:667 src/MainWindow.py:686
+msgid "Vendor"
+msgstr "Üretici"
+
+#: src/MainWindow.py:383 src/MainWindow.py:416 src/MainWindow.py:469
+#: src/MainWindow.py:490 src/MainWindow.py:511 src/MainWindow.py:531
+#: src/MainWindow.py:551 src/MainWindow.py:570 src/MainWindow.py:589
+#: src/MainWindow.py:608 src/MainWindow.py:667
+msgid "Model"
+msgstr "Model"
+
+#: src/MainWindow.py:383
+msgid "Family"
+msgstr "Aile"
+
+#: src/MainWindow.py:397
+msgid "Operating System"
+msgstr "İşletim Sistemi"
+
+#: src/MainWindow.py:398 src/MainWindow.py:628 src/MainWindow.py:648
+msgid "Name"
+msgstr "İsim"
+
+#: src/MainWindow.py:398
+msgid "Version"
+msgstr "Sürüm"
+
+#: src/MainWindow.py:398
+msgid "Kernel"
+msgstr "Çekirdek"
+
+#: src/MainWindow.py:398 src/MainWindow.py:510
+msgid "Display"
+msgstr "Görüntü"
+
+#: src/MainWindow.py:416
+msgid "Cores / Threads"
+msgstr "Çekirdek / Parçacık"
+
 #: src/MainWindow.py:435
 msgid "Empty"
 msgstr "Boş"
+
+#: src/MainWindow.py:449
+msgid "Slot"
+msgstr "Yuva"
+
+#: src/MainWindow.py:449 src/MainWindow.py:469
+msgid "Size"
+msgstr "Boyut"
+
+#: src/MainWindow.py:449 src/MainWindow.py:469
+msgid "Type"
+msgstr "Tip"
+
+#: src/MainWindow.py:449
+msgid "Speed"
+msgstr "Hız"
+
+#: src/MainWindow.py:490 src/MainWindow.py:531 src/MainWindow.py:551
+#: src/MainWindow.py:570 src/MainWindow.py:589 src/MainWindow.py:608
+#: src/MainWindow.py:628 src/MainWindow.py:648
+msgid "Driver"
+msgstr "Sürücü"
+
+#: src/MainWindow.py:511
+msgid "Resolution"
+msgstr "Çözünürlük"
+
+#: src/MainWindow.py:607
+msgid "Camera"
+msgstr "Kamera"
+
+#: src/MainWindow.py:627
+msgid "Keyboard"
+msgstr "Klavye"
+
+#: src/MainWindow.py:628 src/MainWindow.py:648 src/MainWindow.py:686
+msgid "Connection"
+msgstr "Bağlantı"
+
+#: src/MainWindow.py:647
+msgid "Mouse"
+msgstr "Fare"
+
+#: src/MainWindow.py:666
+msgid "Fingerprint"
+msgstr "Parmak İzi"
+
+#: src/MainWindow.py:685
+msgid "Printer"
+msgstr "Yazıcı"
 
 #: src/MainWindow.py:722
 msgid "Thank you for your contribution."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pardus-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 14:19+0300\n"
+"POT-Creation-Date: 2026-02-19 14:34+0300\n"
 "PO-Revision-Date: 2025-11-25 11:43+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Português <hugokarvalho@gotmail.com>\n"
@@ -152,39 +152,39 @@ msgstr "Dispositivo não encontrado"
 msgid "Computer"
 msgstr "Informações do computador"
 
-#: src/MainWindow.py:237
+#: src/MainWindow.py:237 src/MainWindow.py:398
 msgid "Desktop"
 msgstr "Ambiente gráfico"
 
-#: src/MainWindow.py:246
+#: src/MainWindow.py:246 src/MainWindow.py:415
 msgid "Processor"
 msgstr "Processador"
 
-#: src/MainWindow.py:255
+#: src/MainWindow.py:255 src/MainWindow.py:489
 msgid "Graphics"
 msgstr "Placa gráfica"
 
-#: src/MainWindow.py:267
+#: src/MainWindow.py:267 src/MainWindow.py:448
 msgid "Memory"
 msgstr "Memória"
 
-#: src/MainWindow.py:276
+#: src/MainWindow.py:276 src/MainWindow.py:468
 msgid "Storage"
 msgstr "Armazenamento"
 
-#: src/MainWindow.py:289
+#: src/MainWindow.py:289 src/MainWindow.py:569
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/MainWindow.py:300
+#: src/MainWindow.py:300 src/MainWindow.py:588
 msgid "Audio"
 msgstr "Áudio"
 
-#: src/MainWindow.py:311
+#: src/MainWindow.py:311 src/MainWindow.py:550
 msgid "Wifi"
 msgstr "Wifi"
 
-#: src/MainWindow.py:320
+#: src/MainWindow.py:320 src/MainWindow.py:530
 msgid "Ethernet"
 msgstr "Ethernet"
 
@@ -202,10 +202,107 @@ msgstr ""
 msgid "Public IP"
 msgstr "<b>IP Público:</b>"
 
+#: src/MainWindow.py:382
+#, fuzzy
+msgid "Computer Info"
+msgstr "Informações do computador"
+
+#: src/MainWindow.py:383 src/MainWindow.py:416 src/MainWindow.py:449
+#: src/MainWindow.py:490 src/MainWindow.py:511 src/MainWindow.py:531
+#: src/MainWindow.py:551 src/MainWindow.py:570 src/MainWindow.py:589
+#: src/MainWindow.py:608 src/MainWindow.py:667 src/MainWindow.py:686
+msgid "Vendor"
+msgstr "Fornecedor"
+
+#: src/MainWindow.py:383 src/MainWindow.py:416 src/MainWindow.py:469
+#: src/MainWindow.py:490 src/MainWindow.py:511 src/MainWindow.py:531
+#: src/MainWindow.py:551 src/MainWindow.py:570 src/MainWindow.py:589
+#: src/MainWindow.py:608 src/MainWindow.py:667
+msgid "Model"
+msgstr "Modelo"
+
+#: src/MainWindow.py:383
+msgid "Family"
+msgstr "Família"
+
+#: src/MainWindow.py:397
+msgid "Operating System"
+msgstr "Sistema Operativo"
+
+#: src/MainWindow.py:398 src/MainWindow.py:628 src/MainWindow.py:648
+msgid "Name"
+msgstr "Nome"
+
+#: src/MainWindow.py:398
+msgid "Version"
+msgstr "Versão"
+
+#: src/MainWindow.py:398
+msgid "Kernel"
+msgstr "Kernel"
+
+#: src/MainWindow.py:398 src/MainWindow.py:510
+msgid "Display"
+msgstr "Ecrã"
+
+#: src/MainWindow.py:416
+msgid "Cores / Threads"
+msgstr "Núcleos / Threads"
+
 #: src/MainWindow.py:435
 #, fuzzy
 msgid "Empty"
 msgstr "vazio"
+
+#: src/MainWindow.py:449
+msgid "Slot"
+msgstr "Slot"
+
+#: src/MainWindow.py:449 src/MainWindow.py:469
+msgid "Size"
+msgstr "Tamanho"
+
+#: src/MainWindow.py:449 src/MainWindow.py:469
+msgid "Type"
+msgstr "Tipo"
+
+#: src/MainWindow.py:449
+msgid "Speed"
+msgstr "Velocidade"
+
+#: src/MainWindow.py:490 src/MainWindow.py:531 src/MainWindow.py:551
+#: src/MainWindow.py:570 src/MainWindow.py:589 src/MainWindow.py:608
+#: src/MainWindow.py:628 src/MainWindow.py:648
+msgid "Driver"
+msgstr "Controlador"
+
+#: src/MainWindow.py:511
+msgid "Resolution"
+msgstr "Resolução"
+
+#: src/MainWindow.py:607
+msgid "Camera"
+msgstr "Câmara"
+
+#: src/MainWindow.py:627
+msgid "Keyboard"
+msgstr "Teclado"
+
+#: src/MainWindow.py:628 src/MainWindow.py:648 src/MainWindow.py:686
+msgid "Connection"
+msgstr "Ligação"
+
+#: src/MainWindow.py:647
+msgid "Mouse"
+msgstr "Rato"
+
+#: src/MainWindow.py:666
+msgid "Fingerprint"
+msgstr "Impressão digital"
+
+#: src/MainWindow.py:685
+msgid "Printer"
+msgstr "Impressora"
 
 #: src/MainWindow.py:722
 msgid "Thank you for your contribution."
@@ -240,15 +337,6 @@ msgstr "Mostrar resumo"
 #, fuzzy
 #~ msgid "Pardus About"
 #~ msgstr "Informações do Pardus"
-
-#~ msgid "Slot"
-#~ msgstr "Slot"
-
-#~ msgid "Vendor"
-#~ msgstr "Fornecedor"
-
-#~ msgid "Model"
-#~ msgstr "Modelo"
 
 #~ msgid "<span size=\"small\">Computer</span>"
 #~ msgstr "<span size=\"small\">Computador</span>"
@@ -286,65 +374,11 @@ msgstr "Mostrar resumo"
 #~ msgid "<span size=\"small\">Public IP</span>"
 #~ msgstr "<span size=\"small\">IP Público</span>"
 
-#~ msgid "Family"
-#~ msgstr "Família"
-
-#~ msgid "Operating System"
-#~ msgstr "Sistema Operativo"
-
-#~ msgid "Cores / Threads"
-#~ msgstr "Núcleos / Threads"
-
-#~ msgid "Display"
-#~ msgstr "Ecrã"
-
-#~ msgid "Camera"
-#~ msgstr "Câmara"
-
-#~ msgid "Keyboard"
-#~ msgstr "Teclado"
-
-#~ msgid "Mouse"
-#~ msgstr "Rato"
-
-#~ msgid "Fingerprint"
-#~ msgstr "Impressão digital"
-
-#~ msgid "Printer"
-#~ msgstr "Impressora"
-
 #~ msgid "About This Computer"
 #~ msgstr "Acerca deste computador"
 
-#~ msgid "Size"
-#~ msgstr "Tamanho"
-
-#~ msgid "Type"
-#~ msgstr "Tipo"
-
-#~ msgid "Speed"
-#~ msgstr "Velocidade"
-
 #~ msgid "No memory information"
 #~ msgstr "Nenhuma informação de memória"
-
-#~ msgid "Driver"
-#~ msgstr "Controlador"
-
-#~ msgid "Resolution"
-#~ msgstr "Resolução"
-
-#~ msgid "Name"
-#~ msgstr "Nome"
-
-#~ msgid "Connection"
-#~ msgstr "Ligação"
-
-#~ msgid "Version"
-#~ msgstr "Versão"
-
-#~ msgid "Kernel"
-#~ msgstr "Kernel"
 
 #, fuzzy
 #~ msgid "<b>Hardware:</b>"
