@@ -1,3 +1,32 @@
+pardus-about (1.1.0) UNRELEASED; urgency=medium
+
+  [ Hugo Carvalho ]
+  * Update Portuguese translation
+
+  [ Ali Riza KESKIN ]
+  * fix __version__ file path
+  * detect usb ethernet via cdc_ether module match
+  * hardware info json add uncategorized usb and pci devices
+  * dualboot os info added
+  * fix None vendor issue
+  * use subprocess instead of os.system
+
+  [ Emin Fedar ]
+  * fix: requests.get() exception handling crash
+  * fix: remove executable flag from icons
+  * REFACTOR: Hardware listing, UI
+  * fix: remove prints and format files
+  * feat: add --json export option
+  * feat: improved startup time, separated ip fetching, hide ip
+  * fix: remove unnecessary ui defines
+  * fix: separate private & public ip, show reveal btn after value set
+  * feat: added Export System Report
+  * feat: better calling Actions.py
+  * fix: translations
+  * fix: main page cells padding
+
+ -- Emin Fedar <emin.fedar@pardus.org.tr>  Thu, 19 Feb 2026 14:47:10 +0300
+
 pardus-about (1.0.0~beta3) unstable; urgency=medium
 
   [ Emin Fedar ]
