@@ -6,6 +6,15 @@ It is currently a work in progress. Maintenance is done by <a href="https://www.
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/pardus-about.svg)](https://repology.org/project/pardus-about/versions)
 
+
+### **Screenshots**
+
+![Pardus About 1](screenshots/pardus-about-1.png)
+
+![Pardus About 2](screenshots/pardus-about-2.png)
+
+![Pardus About 2](screenshots/pardus-about-3.png)
+
 ### **Dependencies**
 
 This application is developed based on Python3 and GTK+ 3. Dependencies:
@@ -36,11 +45,6 @@ sudo mk-build-deps -ir
 gbp buildpackage --git-export-dir=/tmp/build/pardus-about -us -uc
 ```
 
-### **Screenshots**
-
-![Pardus About 1](screenshots/pardus-about-1.png)
-
-![Pardus About 2](screenshots/pardus-about-2.png)
 
 --------------------------------------
 <br>
