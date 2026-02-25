@@ -10,6 +10,11 @@ pardus-about (1.1.0) UNRELEASED; urgency=medium
   * dualboot os info added
   * fix None vendor issue
   * use subprocess instead of os.system
+  * add more log and command output
+  * add default env list output
+  * run_and_save custom filename support added
+  * system report: add user reports. dbus, flatpak list, dconf dump
+  * add user journal log
 
   [ Emin Fedar ]
   * fix: requests.get() exception handling crash
@@ -24,8 +29,9 @@ pardus-about (1.1.0) UNRELEASED; urgency=medium
   * feat: better calling Actions.py
   * fix: translations
   * fix: main page cells padding
+  * fix: little refactoring
 
- -- Emin Fedar <emin.fedar@pardus.org.tr>  Thu, 19 Feb 2026 14:47:10 +0300
+ -- Emin Fedar <emin.fedar@pardus.org.tr>  Wed, 25 Feb 2026 10:27:36 +0300
 
 pardus-about (1.0.0~beta3) unstable; urgency=medium
 
