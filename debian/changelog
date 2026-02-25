@@ -1,4 +1,4 @@
-pardus-about (1.1.0) UNRELEASED; urgency=medium
+pardus-about (1.1.0) yirmibes; urgency=medium
 
   [ Hugo Carvalho ]
   * Update Portuguese translation
@@ -15,6 +15,10 @@ pardus-about (1.1.0) UNRELEASED; urgency=medium
   * run_and_save custom filename support added
   * system report: add user reports. dbus, flatpak list, dconf dump
   * add user journal log
+  * remove unused dh-python from debian/rules
+  * dump hardware json as user not root
+  * fix missing dependency
+  * add more logs and kernel config
 
   [ Emin Fedar ]
   * fix: requests.get() exception handling crash
@@ -30,8 +34,10 @@ pardus-about (1.1.0) UNRELEASED; urgency=medium
   * fix: translations
   * fix: main page cells padding
   * fix: little refactoring
+  * fix: xfce compatible borders
+  * fix: remove quotes in distro name
 
- -- Emin Fedar <emin.fedar@pardus.org.tr>  Wed, 25 Feb 2026 10:27:36 +0300
+ -- Emin Fedar <emin.fedar@pardus.org.tr>  Wed, 25 Feb 2026 11:42:41 +0300
 
 pardus-about (1.0.0~beta3) unstable; urgency=medium
 
