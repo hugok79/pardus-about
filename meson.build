@@ -16,7 +16,7 @@ install_data('pardus-about.svg', install_dir : '/usr/share/icons/hicolor/scalabl
 install_data('pardus-about-symbolic.svg', install_dir : '/usr/share/icons/hicolor/scalable/apps')
 
 # polkit rule
-install_data('tr.org.pardus.pkexec.pardus-about.policy', install_dir : '/usr/share/polkit-1/actions/')
+subdir('polkit')
 
 # desktop files
 install_data('tr.org.pardus.about.desktop', install_dir : '/usr/share/applications/')
