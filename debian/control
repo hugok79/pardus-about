@@ -25,5 +25,6 @@ Depends: ${misc:Depends},
          pkexec,
          hwdata,
          dconf-cli
+Recommends: libnss-myhostname
 Description: About Pardus
- Get info about your Pardus system.
+ Get detailed system information about your Pardus system.
