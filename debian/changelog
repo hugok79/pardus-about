@@ -3,8 +3,9 @@ pardus-about (1.2.1) yirmibes; urgency=medium
   * fix: add sudo group control
   * fix: policy
   * fix: remove prints
+  * feat: add libnss-myhostname to Recommends
 
- -- Emin Fedar <emin.fedar@pardus.org.tr>  Fri, 06 Mar 2026 09:59:53 +0300
+ -- Emin Fedar <emin.fedar@pardus.org.tr>  Fri, 06 Mar 2026 10:48:16 +0300
 
 pardus-about (1.2.0) yirmibes; urgency=medium
 
