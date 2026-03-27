@@ -1,3 +1,12 @@
+pardus-about (1.2.2) yirmibes; urgency=medium
+
+  [ Ali Riza KESKIN ]
+  * 7 day journal log and lsblk
+  * add more logs
+  * fix security issues: * erase report directory if exists * remove old report file if exists
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Fri, 27 Mar 2026 11:36:34 +0300
+
 pardus-about (1.2.1) yirmibes; urgency=medium
 
   * fix: add sudo group control
