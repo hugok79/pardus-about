@@ -1,15 +1,14 @@
 # Portuguese translation of pardus-about.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022, 2023, 2024, 2025.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022, 2023, 2024, 2025, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pardus-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-19 14:34+0300\n"
-"PO-Revision-Date: 2025-11-25 11:43+0000\n"
+"PO-Revision-Date: 2026-03-29 23:52+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Português <hugokarvalho@gotmail.com>\n"
 "Language: pt\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: ui/MainWindow.glade:7 ui/MainWindow.glade:778
 msgid "About Pardus"
@@ -28,22 +27,21 @@ msgid "Gathering system logs..."
 msgstr "A recolher registos do sistema..."
 
 #: ui/MainWindow.glade:86
-#, fuzzy
 msgid "Your system report has been exported to your desktop"
-msgstr "O relatório do sistema foi copiado para a sua área de transferência!"
+msgstr "O relatório do sistema foi copiado para a sua área de trabalho"
 
 #: ui/MainWindow.glade:148
 msgid "System report exporting failed"
-msgstr ""
+msgstr "Falha ao exportar o relatório do sistema"
 
 #: ui/MainWindow.glade:166
 msgid "Please run the app from terminal to see the error logs."
 msgstr ""
+"Executar a aplicação a partir do terminal para ver os registos de erros."
 
 #: ui/MainWindow.glade:218
-#, fuzzy
 msgid "Export System Report..."
-msgstr "Mostrar relatório do sistema"
+msgstr "Exportar relatório do sistema..."
 
 #: ui/MainWindow.glade:263
 msgid "About App"
@@ -148,9 +146,8 @@ msgid "Device not found"
 msgstr "Dispositivo não encontrado"
 
 #: src/MainWindow.py:229
-#, fuzzy
 msgid "Computer"
-msgstr "Informações do computador"
+msgstr "Computador"
 
 #: src/MainWindow.py:237 src/MainWindow.py:398
 msgid "Desktop"
@@ -195,15 +192,13 @@ msgstr "Desconhecido"
 
 #: src/MainWindow.py:358
 msgid "Private IP"
-msgstr ""
+msgstr "IP privado"
 
 #: src/MainWindow.py:368
-#, fuzzy
 msgid "Public IP"
-msgstr "<b>IP Público:</b>"
+msgstr "IP público"
 
 #: src/MainWindow.py:382
-#, fuzzy
 msgid "Computer Info"
 msgstr "Informações do computador"
 
@@ -250,9 +245,8 @@ msgid "Cores / Threads"
 msgstr "Núcleos / Threads"
 
 #: src/MainWindow.py:435
-#, fuzzy
 msgid "Empty"
-msgstr "vazio"
+msgstr "Vazio"
 
 #: src/MainWindow.py:449
 msgid "Slot"
