@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 16:02+0300\n"
+"POT-Creation-Date: 2026-04-14 11:09+0300\n"
 "PO-Revision-Date: 2025-11-24 01:59+0300\n"
 "Last-Translator: Fatih Altun <fatih.altun@pardus.org.tr>\n"
 "Language-Team: Turkish <dev@pardus.org.tr>\n"
@@ -22,11 +22,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: Gtranslator 42.0\n"
 
-#: ui/MainWindow.glade:7 ui/MainWindow.glade:192 ui/MainWindow.glade:932
+#: ui/MainWindow.glade:7 ui/MainWindow.glade:830
 msgid "About Pardus"
 msgstr "Pardus Hakkında"
 
-#: ui/MainWindow.glade:39 ui/MainWindow.glade:741
+#: ui/MainWindow.glade:39 ui/MainWindow.glade:639
 msgid "Gathering system logs..."
 msgstr "Sistem logları toplanıyor..."
 
@@ -42,59 +42,51 @@ msgstr "Sistem raporu çıkarma işlemi başarısız"
 msgid "Please run the app from terminal to see the error logs."
 msgstr "Lütfen hata kayıtlarını görmek için uygulamayı uçbirimden çalıştırın."
 
-#: ui/MainWindow.glade:205
-msgid "Cancel"
-msgstr "İptal"
-
-#: ui/MainWindow.glade:218
-msgid "Ok"
-msgstr "Tamam"
-
-#: ui/MainWindow.glade:326
+#: ui/MainWindow.glade:223
 msgid "Export System Report..."
 msgstr "Sistem Raporu Çıkart..."
 
-#: ui/MainWindow.glade:371
+#: ui/MainWindow.glade:268
 msgid "About App"
 msgstr "Uygulama Hakkında"
 
-#: ui/MainWindow.glade:547
+#: ui/MainWindow.glade:444
 msgid "Username"
 msgstr "Kullanıcı adı"
 
-#: ui/MainWindow.glade:590
+#: ui/MainWindow.glade:487
 msgid "Hostname"
 msgstr "Makine adı"
 
-#: ui/MainWindow.glade:681 src/MainWindow.py:865
+#: ui/MainWindow.glade:579 src/MainWindow.py:869
 msgid "Show Hardware Details"
 msgstr "Donanım Ayrıntılarını Göster"
 
-#: ui/MainWindow.glade:695
+#: ui/MainWindow.glade:593
 msgid "Show System Report"
 msgstr "Sistem Raporunu Göster"
 
-#: ui/MainWindow.glade:858
+#: ui/MainWindow.glade:756
 msgid "Details"
 msgstr "Detaylar"
 
-#: ui/MainWindow.glade:923
+#: ui/MainWindow.glade:821
 msgid "Pardus Info"
 msgstr "Pardus Hakkında"
 
-#: ui/MainWindow.glade:956
+#: ui/MainWindow.glade:854
 msgid "About Pardus About Application"
 msgstr "Pardus Hakkında Uygulaması Hakkında"
 
-#: ui/MainWindow.glade:964
+#: ui/MainWindow.glade:862
 msgid "Get info about your Pardus system."
 msgstr "Pardus sisteminiz hakkında bilgi alın."
 
-#: ui/MainWindow.glade:966
+#: ui/MainWindow.glade:864
 msgid "Website"
 msgstr "Web Sitesi"
 
-#: ui/MainWindow.glade:967
+#: ui/MainWindow.glade:865
 msgid ""
 "This program comes with absolutely no warranty.\n"
 "See the <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GNU General "
@@ -105,17 +97,28 @@ msgstr ""
 "Genel Kamu Lisansı, sürüm 3 veya üstü</a>'na bakınız."
 
 #. Name Surname <example@examplemail.com>
-#: ui/MainWindow.glade:975
+#: ui/MainWindow.glade:873
 msgid "translator-credits"
 msgstr ""
-"Fatih Altun <fatih.altun@pardus.org.tr>"
-"Emin Fedar <emin.fedar@pardus.org.tr>"
+"Fatih Altun <fatih.altun@pardus.org.tr>Emin Fedar <emin.fedar@pardus.org.tr>"
 
-#: ui/MainWindow.glade:1013
+#: ui/MainWindow.glade:927 src/MainWindow.py:803
+msgid "Change Hostname:"
+msgstr "Hostname Değiştir:"
+
+#: ui/MainWindow.glade:958
+msgid "Cancel"
+msgstr "İptal"
+
+#: ui/MainWindow.glade:973
+msgid "Ok"
+msgstr "Tamam"
+
+#: ui/MainWindow.glade:1002
 msgid "Submit"
 msgstr "Gönder"
 
-#: ui/MainWindow.glade:1039
+#: ui/MainWindow.glade:1028
 msgid ""
 "The information shared will only be used for hardware compatibility "
 "statistics and to be able to troubleshoot compatibility issues in advance.\n"
@@ -133,211 +136,215 @@ msgstr ""
 "Donanım bilgileri üçüncü taraflarla paylaşılmaz ve bu işlem sırasında "
 "yalnızca bir kez gönderilir."
 
-#: ui/MainWindow.glade:1068
+#: ui/MainWindow.glade:1057
 msgid "Below is the data which will be sent:"
 msgstr "Aşağıda gönderilecek veriler yer almaktadır:"
 
-#: ui/MainWindow.glade:1141
+#: ui/MainWindow.glade:1128
 msgid "Copy Report"
 msgstr "Raporu Kopyala"
 
-#: ui/MainWindow.glade:1157
+#: ui/MainWindow.glade:1144
 msgid "Send"
 msgstr "Gönder"
 
-#: ui/MainWindow.glade:1229
+#: ui/MainWindow.glade:1216
 msgid "System Report has been copied to your clipboard!"
 msgstr "Sistem Raporu panonuza kopyalandı!"
 
-#: src/MainWindow.py:220 src/MainWindow.py:237 src/MainWindow.py:457
-#: src/MainWindow.py:478 src/MainWindow.py:499 src/MainWindow.py:519
-#: src/MainWindow.py:539 src/MainWindow.py:559 src/MainWindow.py:578
-#: src/MainWindow.py:597 src/MainWindow.py:616 src/MainWindow.py:636
-#: src/MainWindow.py:655 src/MainWindow.py:674
+#: src/MainWindow.py:239 src/MainWindow.py:256 src/MainWindow.py:477
+#: src/MainWindow.py:498 src/MainWindow.py:519 src/MainWindow.py:539
+#: src/MainWindow.py:559 src/MainWindow.py:579 src/MainWindow.py:598
+#: src/MainWindow.py:617 src/MainWindow.py:636 src/MainWindow.py:656
+#: src/MainWindow.py:675 src/MainWindow.py:694
 msgid "Device not found"
 msgstr "Aygıt bulunamadı"
 
-#: src/MainWindow.py:245 src/MainWindow.py:262 src/MainWindow.py:268
-#: src/MainWindow.py:433 src/MainWindow.py:434
+#: src/MainWindow.py:264 src/MainWindow.py:281 src/MainWindow.py:287
+#: src/MainWindow.py:453 src/MainWindow.py:454
 msgid "Unknown"
 msgstr "Bilinmeyen"
 
-#: src/MainWindow.py:290 src/MainWindow.py:391
+#: src/MainWindow.py:309 src/MainWindow.py:411
 msgid "Kernel"
 msgstr "Çekirdek"
 
-#: src/MainWindow.py:294 src/MainWindow.py:391
+#: src/MainWindow.py:313 src/MainWindow.py:411
 msgid "Desktop"
 msgstr "Masaüstü"
 
-#: src/MainWindow.py:298 src/MainWindow.py:408
+#: src/MainWindow.py:317 src/MainWindow.py:428
 msgid "Processor"
 msgstr "İşlemci"
 
-#: src/MainWindow.py:302 src/MainWindow.py:482
+#: src/MainWindow.py:321 src/MainWindow.py:502
 msgid "Graphics"
 msgstr "Grafik"
 
-#: src/MainWindow.py:306 src/MainWindow.py:441
+#: src/MainWindow.py:325 src/MainWindow.py:461
 msgid "Memory"
 msgstr "Hafıza"
 
-#: src/MainWindow.py:310 src/MainWindow.py:461
+#: src/MainWindow.py:329 src/MainWindow.py:481
 msgid "Storage"
 msgstr "Depolama"
 
-#: src/MainWindow.py:318 src/MainWindow.py:562
+#: src/MainWindow.py:337 src/MainWindow.py:582
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/MainWindow.py:324 src/MainWindow.py:581
+#: src/MainWindow.py:343 src/MainWindow.py:601
 msgid "Audio"
 msgstr "Ses"
 
-#: src/MainWindow.py:330 src/MainWindow.py:543
+#: src/MainWindow.py:349 src/MainWindow.py:563
 msgid "Wifi"
 msgstr "Kablosuz"
 
-#: src/MainWindow.py:336 src/MainWindow.py:523
+#: src/MainWindow.py:355 src/MainWindow.py:543
 msgid "Ethernet"
 msgstr "Kablolu"
 
-#: src/MainWindow.py:348
+#: src/MainWindow.py:367
 msgid "Private IP"
 msgstr "Yerel IP"
 
-#: src/MainWindow.py:358
+#: src/MainWindow.py:377
 msgid "Public IP"
 msgstr "Dış IP:"
 
-#: src/MainWindow.py:375
+#: src/MainWindow.py:395
 msgid "Computer Info"
 msgstr "Bilgisayar"
 
-#: src/MainWindow.py:376 src/MainWindow.py:409 src/MainWindow.py:442
-#: src/MainWindow.py:483 src/MainWindow.py:504 src/MainWindow.py:524
-#: src/MainWindow.py:544 src/MainWindow.py:563 src/MainWindow.py:582
-#: src/MainWindow.py:601 src/MainWindow.py:660 src/MainWindow.py:679
+#: src/MainWindow.py:396 src/MainWindow.py:429 src/MainWindow.py:462
+#: src/MainWindow.py:503 src/MainWindow.py:524 src/MainWindow.py:544
+#: src/MainWindow.py:564 src/MainWindow.py:583 src/MainWindow.py:602
+#: src/MainWindow.py:621 src/MainWindow.py:680 src/MainWindow.py:699
 msgid "Vendor"
 msgstr "Üretici"
 
-#: src/MainWindow.py:376 src/MainWindow.py:409 src/MainWindow.py:462
-#: src/MainWindow.py:483 src/MainWindow.py:504 src/MainWindow.py:524
-#: src/MainWindow.py:544 src/MainWindow.py:563 src/MainWindow.py:582
-#: src/MainWindow.py:601 src/MainWindow.py:660
+#: src/MainWindow.py:396 src/MainWindow.py:429 src/MainWindow.py:482
+#: src/MainWindow.py:503 src/MainWindow.py:524 src/MainWindow.py:544
+#: src/MainWindow.py:564 src/MainWindow.py:583 src/MainWindow.py:602
+#: src/MainWindow.py:621 src/MainWindow.py:680
 msgid "Model"
 msgstr "Model"
 
-#: src/MainWindow.py:376
+#: src/MainWindow.py:396
 msgid "Family"
 msgstr "Aile"
 
-#: src/MainWindow.py:390
+#: src/MainWindow.py:410
 msgid "Operating System"
 msgstr "İşletim Sistemi"
 
-#: src/MainWindow.py:391 src/MainWindow.py:621 src/MainWindow.py:641
+#: src/MainWindow.py:411 src/MainWindow.py:641 src/MainWindow.py:661
 msgid "Name"
 msgstr "İsim"
 
-#: src/MainWindow.py:391
+#: src/MainWindow.py:411
 msgid "Version"
 msgstr "Sürüm"
 
-#: src/MainWindow.py:391 src/MainWindow.py:503
+#: src/MainWindow.py:411 src/MainWindow.py:523
 msgid "Display"
 msgstr "Görüntü"
 
-#: src/MainWindow.py:409
+#: src/MainWindow.py:429
 msgid "Cores / Threads"
 msgstr "Çekirdek / Parçacık"
 
-#: src/MainWindow.py:428
+#: src/MainWindow.py:448
 msgid "Empty"
 msgstr "Boş"
 
-#: src/MainWindow.py:442
+#: src/MainWindow.py:462
 msgid "Slot"
 msgstr "Yuva"
 
-#: src/MainWindow.py:442 src/MainWindow.py:462
+#: src/MainWindow.py:462 src/MainWindow.py:482
 msgid "Size"
 msgstr "Boyut"
 
-#: src/MainWindow.py:442 src/MainWindow.py:462
+#: src/MainWindow.py:462 src/MainWindow.py:482
 msgid "Type"
 msgstr "Tip"
 
-#: src/MainWindow.py:442
+#: src/MainWindow.py:462
 msgid "Speed"
 msgstr "Hız"
 
-#: src/MainWindow.py:483 src/MainWindow.py:524 src/MainWindow.py:544
-#: src/MainWindow.py:563 src/MainWindow.py:582 src/MainWindow.py:601
-#: src/MainWindow.py:621 src/MainWindow.py:641
+#: src/MainWindow.py:503 src/MainWindow.py:544 src/MainWindow.py:564
+#: src/MainWindow.py:583 src/MainWindow.py:602 src/MainWindow.py:621
+#: src/MainWindow.py:641 src/MainWindow.py:661
 msgid "Driver"
 msgstr "Sürücü"
 
-#: src/MainWindow.py:504
+#: src/MainWindow.py:524
 msgid "Resolution"
 msgstr "Çözünürlük"
 
-#: src/MainWindow.py:600
+#: src/MainWindow.py:620
 msgid "Camera"
 msgstr "Kamera"
 
-#: src/MainWindow.py:620
+#: src/MainWindow.py:640
 msgid "Keyboard"
 msgstr "Klavye"
 
-#: src/MainWindow.py:621 src/MainWindow.py:641 src/MainWindow.py:679
+#: src/MainWindow.py:641 src/MainWindow.py:661 src/MainWindow.py:699
 msgid "Connection"
 msgstr "Bağlantı"
 
-#: src/MainWindow.py:640
+#: src/MainWindow.py:660
 msgid "Mouse"
 msgstr "Fare"
 
-#: src/MainWindow.py:659
+#: src/MainWindow.py:679
 msgid "Fingerprint"
 msgstr "Parmak İzi"
 
-#: src/MainWindow.py:678
+#: src/MainWindow.py:698
 msgid "Printer"
 msgstr "Yazıcı"
 
-#: src/MainWindow.py:715
+#: src/MainWindow.py:735
 msgid "Thank you for your contribution."
 msgstr "Katkınız için teşekkürler."
 
-#: src/MainWindow.py:716
+#: src/MainWindow.py:736
 msgid "You can find your submission here:"
 msgstr "Gönderiminizi burada bulabilirsiniz:"
 
-#: src/MainWindow.py:730
+#: src/MainWindow.py:750
 msgid "An error occured while sending the data."
 msgstr "Veriler gönderilirken bir hata oluştu."
 
-#: src/MainWindow.py:731
+#: src/MainWindow.py:751
 msgid "Returned message from the server:"
 msgstr "Sunucudan gelen yanıt:"
 
-#: src/MainWindow.py:737
+#: src/MainWindow.py:757
 msgid "Connection Failed"
 msgstr "Bağlantı Başarısız"
 
-#: src/MainWindow.py:739
+#: src/MainWindow.py:759
 msgid ""
 "If you are connected to the internet, then our servers have some problem."
 msgstr "İnternete bağlıysanız, sunucularımızda bir sorun var demektir."
 
-#: src/MainWindow.py:794
-msgid "New Hostname:"
-msgstr "Yeni Makine adı:"
-
-#: src/MainWindow.py:862
+#: src/MainWindow.py:866
 msgid "Show Summary"
 msgstr "Özeti göster"
+
+#: src/MainWindow.py:1014
+msgid "Hostname is invalid. Use only letters, numbers and '-'."
+msgstr "Hostname geçersiz. Sadece harfler, rakamlar ve '-' kullanın."
+
+#: src/MainWindow.py:1025
+msgid "Hostname change failed! Please check the terminal output."
+msgstr "Hostname değiştirilemedi. Lütfen terminal çıktısını kontrol edin."
 
 #~ msgid "Computer"
 #~ msgstr "Bilgisayar"
